@@ -1,179 +1,438 @@
-.fonteTitulo {
-  font-family: "Paytone One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+<!DOCTYPE html>
+<html lang="pt-br">
 
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Arista - Página Inicial</title>
 
+    <link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
 
-.fonteTexto {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+    <link rel="stylesheet" href="style.css">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link bootstrap -->
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-}
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
 
 
-header {
-  width: 100%;
-  height: 100px;
-  background-color: navy;
+    <style>
+        .mural {
 
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100vh;
+        }
 
-}
+        .mural .banner {
 
-.imagensPartido {
-  width: 30%;
-}
+            margin-top: 120px;
+            border-radius: 20px;
+            width: 65%;
+            height: 80vh;
+            box-shadow: 0px 0px 8px black;
 
-.imagensPartido img {
-  width: 100px;
-  height: 100px;
-}
+        }
 
-.imagensPartido .imgPartido1 {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
+        .mural .banner2 {
 
-#menu #menuUl {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 25px;
-  list-style: none;
-  font-weight: 800;
+            margin-top: 120px;
+            border-radius: 20px;
+            width: 25%;
+            height: 80vh;
+            box-shadow: 0px 0px 8px black;
+        }
 
-}
+        .apresentacao {
+            width: 100%;
+            height: 70vh;
+            background-color: gold;
+            padding: 20px;
+        }
 
-#menu #menuUl a {
-  text-decoration: none;
+        .apresentacao h1 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 50px;
+            color: navy;
+            text-shadow: 2px 2px 5px goldenrod;
+        }
 
-  display: flex;
-  margin: 10px;
-  color: white;
-  font-size: 15px;
-  text-transform: uppercase;
+        .apresentacao h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 40px;
+            letter-spacing: -2px;
+        }
 
-  transition: 0.1s all ease-in-out;
-}
+        .titulo {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-#menu #menuUl a:hover {
-  font-size: 17px;
-  color: lightgrey;
-}
+        .titulo .linha {
+            width: 20%;
+            height: 2px;
+            margin-top: 55px;
+            background-color: navy;
+        }
 
-footer {
-  width: 100%;
-  height: 38vh;
-  background-color: navy;
-  padding: 20px;
-}
-
-footer .linhaFooter {
-  margin-left: 5%;
-  margin-top: 2vh;
-  width: 90%;
-  height: 1px;
-  background-color: rgba(211, 211, 211, 0.418);
-}
-
-footer .itensFooter {
-  margin-top: 2vh;
-  display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 3vh;
-}
+        .apresentacao .apresentacaoEspaco {
+            margin-top: 3vh;
+            display: flex;
+            justify-content: space-evenly;
 
 
-footer .itensFooter .localizacao {
-  width: 32%;
-  margin-left: 6%;
-}
+        }
 
-footer .itensFooter  p {
-  color: white;
-  width: 90%;
-  text-indent: 5px;
-  font-size: 18px;
-  text-align: justify;
-}
+        .apresentacao .apresentacaoEspaco h3 {
+            text-align: center;
+            margin-top: 2vh;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            font-size: 25px;
+            color: navy;
+            font-weight: 600;
 
-footer .itensFooter .localizacao .imagensPartido {
-  width: 100%;
-  
-}
+        }
 
-footer .itensFooter .localizacao .imagensPartido img {
-  width: 30%;
-  height: 15vh;
-}
+        .apresentacao .apresentacaoEspaco p {
+            text-indent: 20px;
+            font-size: 20px;
+            margin-top: 2vh;
+            text-align: justify;
+        }
 
-footer .itensFooter .redes {
-  width: 32%;
-    text-align: center;
-}
+        .apresentacao .apresentacaoEspaco .quemSou {
+            width: 47%;
+            height: 42vh;
+            padding: 10px;
+        }
 
-footer .itensFooter .redes p {
-  text-align: center;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 2vh;
-  margin-top: 5vh;
-}
-footer .itensFooter .redes a {
+        .apresentacao .apresentacaoEspaco .porQueCandidatura {
+            width: 47%;
+            height: 40vh;
+            padding: 10px;
+        }
 
-  padding: 5px;
-   color: white;
-   text-decoration: none;
-   font-size: 30px;
-}
+        .partido {
+            margin-top: 4vh;
+            padding: 20px;
+            width: 100%;
+            height: 115vh;
 
-footer .itensFooter .politica {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-}
+        }
 
-footer .itensFooter .politica p {
-  text-align: center;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 2vh;
-  margin-top: 5vh;
-}
+        .partido .cima {
+            display: flex;
+            justify-content: space-evenly;
+            height: 35vh;
 
-footer .itensFooter .politica a {
-   color: white;
-   text-decoration: none;
-   font-size: 20px;
-   text-align: center;
-}
 
-/* EFEITOS HOOVER */
+        }
 
-footer .itensFooter a:hover {
-  color: gold;
-}
+        .partido .cima .logoPartido {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            margin-top: 3vh;
+
+        }
+
+        .partido .cima .logoPartido .imgSiglaPPC {
+            width: 60%;
+            height: 30vh;
+
+        }
+
+        .partido .cima .logoPartido .imgIconPPC {
+            margin-top: 2vh;
+            width: 40%;
+            height: 25vh;
+        }
+
+        .partido .cima .amigosPartido {
+            margin-top: 2vh;
+            width: 60%;
+            height: 30vh;
+
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .partido .cima .amigosPartido img {
+            width: 40%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px black;
+
+        }
+
+        .partido .cima .amigosPartido .imgAmigos1 {
+            transform: rotate(-5deg);
+            z-index: -1;
+        }
+
+        .partido .cima .amigosPartido .imgAmigos2 {
+            transform: rotate(5deg);
+            z-index: -1;
+        }
+
+        .meio {
+            margin-top: 1vh;
+            height: 55vh;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .meio p {
+
+            text-indent: 20px;
+            font-size: 20px;
+            text-align: justify;
+
+        }
+
+        .meio .vandao {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .meio .vandao img {
+            width: 20%;
+            height: 28vh;
+            margin-top: 2vh;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .meio .vandao .paragrafo {
+            margin-top: 2vh;
+            width: 79%;
+            height: 10vh;
+        }
+
+        .meio .vandao .paragrafo h2 {
+            margin-top: 3vh;
+            width: 100%;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            font-size: 25px;
+            color: navy;
+            font-weight: 600;
+        }
+
+        .baixo ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2%;
+        }
+
+        .baixo p {
+
+            margin-top: 3vh;
+            width: 95%;
+            text-indent: 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="imagensPartido">
+            <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+            <img src="/Imagens/PPCsiglaBranca.png" alt="">
+        </div>
+
+        <div id="menu">
+            <ul id="menuUl" class="fonteTitulo">
+                <li><a href="#">Pagina Inicial</a></li>
+                <li><a href="">Propostas</a></li>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">História</a></li>
+                <li><a href="">Album de Campanha</a></li>
+                <li><a href="">Jingle</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="mural">
+        <img class="banner2" src="Imagens/MindinhoBannerCmp.png" alt="">
+        <img class="banner" src="Imagens/MindinhoCampanhaRua.png" alt="">
+    </div>
+
+    <div class="apresentacao">
+        <div class="titulo">
+            <div class="linha"></div>
+            <h1 class="fonteTitulo">Victor Arista - Mindinho</h1>
+            <div class="linha"></div>
+        </div>
+
+        <h2 class="fonteTitulo">Candidato a vereador de Manuel Ribas</h2>
+
+        <div class="apresentacaoEspaco">
+            <div class="quemSou">
+                <h3 class="fonteTitulo">Quem é o Mindinho?</h3>
+                <p class="fonteTexto">
+                    Victor Arista, ou como prefere ser chamado, Mindinho, creceu em São Paulo, nasceu em 1991 e
+                    atualemente tem 35 anos. Cresceu muito feliz e amado por seus pais, sempre teve sua família como
+                    inspiração para seguir em frente. Se formou em Direito e se especializou em Direitos Urbanisticos e
+                    Direitos Difusos. Após concluir sua graduação, Ele se mudou para Manuel Ribas para ajudar sua avó
+                    doente, onde fundou suas raizes e conquistou todos a sua volta. Atualmente Mindinho faz parte do PPC
+                    - Partido das pequenas causas. O partido buscava pessoas fortes mentalmente e que tivessem
+                    experiências próprias para ajudar o povo, e Mindinho se encaixava perfeitamente.
+                </p>
+            </div>
+
+            <div class="porQueCandidatura">
+                <h3 class="fonteTitulo">Por que a candidatura?</h3>
+                <p class="fonteTexto"> Desde pequeno, ou melhor, desde quando era criança, Mindinho sempre precisou
+                    lidar com barreiras físicas e com preconcietos por conta de sua condição. Isso o desmotivou bastante
+                    durante sua carreira, porém abriu os olhos para as injustiças que foram cometidas com ele e todas as
+                    pessoas com sua condição. A partir disso, ele percebeu que se alguém não tentasse mudar isso, eles
+                    continuariam vivendo tristes e menosprezados, assim ele ingressou para a política. Entre suas
+                    propostas, Mindinho visa dar acessibilidade a todas as pessoas que sofrem por conta de condições
+                    físicas ou mentais de que não possuem culpa.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="partido">
+        <div class="cima">
+            <div class="logoPartido">
+                <img class="imgIconPPC" src="Imagens/iconPPC.png" alt="">
+                <img class="imgSiglaPPC" src="Imagens/PPCsigla.png" alt="">
+            </div>
+
+            <div class="amigosPartido">
+                <img class="imgAmigos1" src="Imagens/AmigosMindinho.png" alt="">
+                <img class="imgAmigos2" src="Imagens/Palestra.png" alt="">
+            </div>
+        </div>
+
+        <div class="meio">
+
+            <p class="fonteTexto">
+                O PPC, conhecido formalmente como Partido das Pequenas Causas, fundamenta sua existência na premissa de
+                que a verdadeira política se faz prestando atenção aos detalhes do dia a dia que as grandes legendas
+                costumam ignorar. Longe de focar apenas em grandes reformas macroeconômicas ou disputas ideológicas
+                profundas, a ideologia do partido se concentra no micro, ou seja, na resolução de problemas práticos que
+                afetam a rotina das pessoas comuns, como a melhoria de um serviço de bairro, a desburocratização de
+                pequenos negócios e o acolhimento de grupos historicamente marginalizados que não encontram espaço nas
+                grandes pautas nacionais. Para o PPC, nenhuma demanda cidadã é insignificante, o que fez com que o
+                partido se tornasse um refúgio para lideranças comunitárias autênticas que buscam transformações reais
+                de curto prazo na infraestrutura urbana e nos direitos civis locais.
+            </p>
+
+
+            <div class="vandao">
+                <img src="Imagens/PresidenteVandao.png" alt="">
+
+                <div class="paragrafo">
+                    <p class="fonteTexto">
+                        O PPC nasceu formalmente no início dos anos 2000, fruto da articulação de movimentos
+                        comunitários,
+                        líderes de bairros e associações de moradores de periferias urbanas. Eles sentiam que as grandes
+                        siglas políticas priorizavam debates ideológicos macroeconômicos em detrimento dos problemas
+                        práticos enfrentados pela população nas cidades.
+
+                    </p>
+                    <p class="fonteTexto">
+                        Um de seus principais idealizadores e fundadores foi o líder comunitário e ex-metalúrgico
+                        Geraldo
+                        Vandão Santos. Vandão defendia que a política municipal precisava ser "descomplicada" e focar
+                        naquilo que ele chamava de "o varejo da cidadania": o buraco na rua, a rampa de acessibilidade
+                        que
+                        faltava no posto de saúde e o horário do ônibus. Sob essa premissa, o PPC obteve seu registro
+                        oficial, adotando uma postura de independência em relação aos blocos tradicionais de esquerda ou
+                        direita.
+                    </p>
+
+                    <h2 class="fonteTitulo">
+                        Marcos Importantes para o PPC:
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="baixo">
+
+                <ul>
+                    <li>
+                        <p class="fonteTexto">
+                            2004 (A Primeira Grande Janela): Nas eleições municipais daquele ano, o partido conquistou
+                            suas primeiras cadeiras em câmaras de vereadores de capitais e cidades de médio porte,
+                            chamando a atenção pela eficiência em campanhas de baixíssimo custo e forte apelo popular.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="fonteTexto">
+                            2012 (A Consolidação da Bancada da Inclusão): O PPC passou por uma reformulação interna,
+                            passando a acolher ativistas de causas específicas que não encontravam espaço nos grandes
+                            partidos, como defensores dos direitos de pessoas com deficiência, idosos e
+                            microempreendedores informais.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="linhaFooter"></div>
+
+        <div class="itensFooter">
+
+            <div class="localizacao">
+
+                <div class="imagensPartido">
+                    <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+                    <img src="/Imagens/PPCsiglaBranca.png" alt="">
+                </div>
+
+                <p class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Getulio Vargas, n° 2890 - São Paulo, Brasil</p>
+            </div>
+
+            <div class="redes">
+
+                <p class="fonteTexto">Siga nossas redes: 
+
+                </p>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-threads"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="politica">
+                <p class="fonteTexto">Políticas: </p>
+                <a class="fonteTexto" href="">Politica de Cookies</a>
+                <a class="fonteTexto" href="">Politica de Privacidae</a>
+            </div>
+
+        </div>
+
+         <div class="linhaFooter"></div>
+    </footer>
+</body>
+
+</html>
