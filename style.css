@@ -1,179 +1,207 @@
-.fonteTitulo {
-  font-family: "Paytone One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-}
-
-
-.fonteTexto {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    
 }
 
 body {
-  width: 100%;
+    width: 100%;
+    
 }
 
 
 header {
-  width: 100%;
-  height: 100px;
-  background-color: navy;
+    width: 100%;
+    height: 100px;
+    background-color: navy;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
 
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
+}
 
+main{
+    padding-top: 120px;
+}
+
+.fonteTitulo {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.fonteTexto {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .imagensPartido {
-  width: 30%;
+    width: 30%;
 }
 
 .imagensPartido img {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .imagensPartido .imgPartido1 {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
-#menu #menuUl {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 25px;
-  list-style: none;
-  font-weight: 800;
-
+.menuLista {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+    list-style: none;
+    font-weight: 800;
 }
 
-#menu #menuUl a {
-  text-decoration: none;
-
-  display: flex;
-  margin: 10px;
-  color: white;
-  font-size: 15px;
-  text-transform: uppercase;
-
-  transition: 0.1s all ease-in-out;
+.menuLista a {
+    text-decoration: none;
+    display: flex;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
-#menu #menuUl a:hover {
-  font-size: 17px;
-  color: lightgrey;
+.NavLinks {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transform: scale(1);
+    transition: 555ms;
+}
+
+.NavLinks:hover{
+    transform: scale(1.08);
+}
+
+.NavLinks::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 217, 0, 0.842);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.NavLinks:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 footer {
-  width: 100%;
-  height: 38vh;
-  background-color: navy;
-  padding: 20px;
+    width: 100%;
+    height: 38vh;
+    background-color: navy;
+    padding: 20px;
 }
 
 footer .linhaFooter {
-  margin-left: 5%;
-  margin-top: 2vh;
-  width: 90%;
-  height: 1px;
-  background-color: rgba(211, 211, 211, 0.418);
+    margin-left: 5%;
+    margin-top: 2vh;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(211, 211, 211, 0.418);
 }
 
 footer .itensFooter {
-  margin-top: 2vh;
-  display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 3vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3vh;
 }
 
 
 footer .itensFooter .localizacao {
-  width: 32%;
-  margin-left: 6%;
+    width: 32%;
+    margin-left: 6%;
 }
 
-footer .itensFooter  p {
-  color: white;
-  width: 90%;
-  text-indent: 5px;
-  font-size: 18px;
-  text-align: justify;
+footer .itensFooter p {
+    color: white;
+    width: 90%;
+    text-indent: 5px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 footer .itensFooter .localizacao .imagensPartido {
-  width: 100%;
-  
+    width: 100%;
+
 }
 
 footer .itensFooter .localizacao .imagensPartido img {
-  width: 30%;
-  height: 15vh;
+    width: 30%;
+    height: 15vh;
 }
 
 footer .itensFooter .redes {
-  width: 32%;
+    width: 32%;
     text-align: center;
 }
 
 footer .itensFooter .redes p {
-  text-align: center;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 2vh;
-  margin-top: 5vh;
+    text-align: center;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
 }
+
 footer .itensFooter .redes a {
 
-  padding: 5px;
-   color: white;
-   text-decoration: none;
-   font-size: 30px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 footer .itensFooter .politica {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
 }
 
 footer .itensFooter .politica p {
-  text-align: center;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 2vh;
-  margin-top: 5vh;
+    text-align: center;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
 }
 
 footer .itensFooter .politica a {
-   color: white;
-   text-decoration: none;
-   font-size: 20px;
-   text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* EFEITOS HOOVER */
 
 footer .itensFooter a:hover {
-  color: gold;
+    color: gold;
 }
