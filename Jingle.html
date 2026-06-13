@@ -19,28 +19,65 @@
 
     <style>
         .Musica {
-            width: 300px;
-            margin-left: 20px;
+            width: 370px;
+            margin-left: 1vw;
             display: flex;
             align-items: center;
             gap: 15px;
-            background-color: #f1f3f5;
+            background-color: gold;
             padding: 12px;
             border-radius: 20px;
         }
 
-        .Musica button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
+        .disco {
+            width: 60px;
+            height: 58px;
+            background-image: url('Imagens/disco.png');
+            background-size: cover;
+            border-radius: 50%;
+            animation: girar 4s linear infinite;
+            animation-play-state: paused;
         }
 
-        .Musica button:hover {
-            background-color: #0056b3;
+        .disco.tocando {
+            animation-play-state: running;
+        }
+
+        main{
+            padding-top: 150px;
+            display: flex;
+            gap: 2vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Letra{
+            width:100%;
+            padding-left:300px;
+            padding-right: 300px;
+        }
+
+        .Letra p{
+            font-size: 23px;
+            line-height: 1.5;
+            text-align: center;
+            text-justify: inter-word;
+            color: #333;
+            margin-bottom: 60px;
+            margin-top: 20px;
+        }
+
+
+
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 
@@ -55,7 +92,7 @@
         </div>
 
         <div class="menu">
-            <ul class="menuLista" class="fonteTitulo">
+            <ul class="menuLista fonteTitulo">
                 <li><a href="index.html" class="NavLinks">Pagina Inicial</a></li>
                 <li><a href="Propostas.html" class="NavLinks">Propostas</a></li>
                 <li><a href="Agenda.html" class="NavLinks">Agenda</a></li>
@@ -69,12 +106,70 @@
 
     <main>
         <div class="Musica">
-            <audio>
-                <source src="Mindinho Jingle.mp3" type="audio/mpeg">
+            <audio controls>
+                <source src="Mindinho 14.mp3" type="audio/mpeg">
                 Seu navegador não suporta este elemento de áudio.
             </audio>
-            <button id="botaoPlayPause">▶ Play</button>
-            <button id="botaoMudo">Mudo</button>
+            <div class="disco">
+                <div class="centroDisco"></div>
+                <script>
+                    // Seleciona o elemento de áudio e a div do disco
+                    const audio = document.querySelector('.Musica audio');
+                    const disco = document.querySelector('.disco');
+
+                    // Quando o áudio começar a tocar, adiciona a classe 'tocando'
+                    audio.addEventListener('play', () => {
+                        disco.classList.add('tocando');
+                    });
+
+                    // Quando o áudio for pausado, remove a classe 'tocando'
+                    audio.addEventListener('pause', () => {
+                        disco.classList.remove('tocando');
+                    });
+
+                    // Opcional: Garante que pare de girar quando a música acabar
+                    audio.addEventListener('ended', () => {
+                        disco.classList.remove('tocando');
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="Letra">
+        <h1 class="fonteTitulo" style="text-align: center;">Cante conosco!</h1>
+        <p>
+            Chegou a hora, o povo já chamou<br>
+            A força do trabalho na cidade começou<br>
+            Não fique aí parado, mude de opinião<br>
+            Vem com a gente, vem de coração!<br>
+        </p>    
+
+        <p>
+            Mindinho! (Mindinho!)<br>
+            Mindinho! (Mindinho!)<br>
+            Vota 14 ! Vota 14!<br>
+            Ele não racha, não para, não olha pra trás<br>
+            Com o Mindinho a gente faz muito mais!<br>
+            Vota 14! Vota 14!<br>
+            Voto certo é 14!<br>
+        </p>
+
+        <p>
+            É o piseiro da renovação<br>
+            Mindinho é a voz de toda a região<br>
+            Para o futuro que a gente quer ver<br>
+            14 é o número que você vai escolher!<br>
+        </p>
+
+        <p>
+            Mindinho! (Mindinho!)<br>
+            Mindinho! (Mindinho!)<br>
+            Vota 14! Vota 14!<br>
+            Ele não racha, não para, não olha pra trás<br>
+            Com o Mindinho a gente faz muito mais!<br>
+            Vota 14! Vota 14!<br>
+            Para mindinho vota 14!<br>
+        </p>
         </div>
     </main>
 
