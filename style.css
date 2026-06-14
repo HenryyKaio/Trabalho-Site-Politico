@@ -5,6 +5,20 @@
     
 }
 
+.fonteTitulo {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.fonteTexto {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
     
@@ -24,25 +38,14 @@ header {
     justify-content: space-evenly;
     position: fixed;
 
+     z-index: 3;
+
 }
 
 main{
     padding-top: 120px;
 }
 
-.fonteTitulo {
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-.fonteTexto {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
 
 .imagensPartido {
     width: 30%;
