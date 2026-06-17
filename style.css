@@ -208,3 +208,12 @@ footer .itensFooter .politica a {
 footer .itensFooter a:hover {
     color: gold;
 }
+
+@view-transition {
+    navigation: auto;
+}
+
+
+::view-transition-group {
+    animation-duration: 1s;
+}
