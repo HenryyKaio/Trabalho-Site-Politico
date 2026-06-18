@@ -141,6 +141,11 @@ footer .itensFooter .localizacao {
     margin-left: 6%;
 }
 
+footer .itensFooter .localizacao p {
+   font-size: 15px;
+   margin-top: -2px;
+}
+
 footer .itensFooter p {
     color: white;
     width: 90%;
@@ -213,7 +218,6 @@ footer .itensFooter a:hover {
     navigation: auto;
 }
 
-
-::view-transition-group {
+::view-transition(root) {
     animation-duration: 1s;
 }
