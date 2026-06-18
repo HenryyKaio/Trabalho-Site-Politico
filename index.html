@@ -23,17 +23,16 @@
         .mural {
 
             display: flex;
-            justify-content: space-evenly;
-            width: 100%;
+            justify-content: space-between;
+            width: 90%;
+            margin-left: 5%;
             height: 650px;
         }
 
         .mural .banner {
-
-
             border-radius: 20px;
-            width: 65%;
-            height: 80vh;
+            width: 80%;
+            height: 600px;
             box-shadow: 0px 0px 8px black;
 
         }
@@ -41,19 +40,23 @@
         .mural .banner2 {
 
             border-radius: 20px;
-            width: 25%;
-            height: 80vh;
+            width: 18%;
+            height: 600px;
             box-shadow: 0px 0px 8px black;
         }
 
-        .apresentacao {
-            width: 100%;
-            height: 70vh;
+        .apresentacaoFundo {
             background-color: gold;
-            padding: 20px;
+            
+        }
+        .apresentacao {
+            width: 90%;
+            height: 70vh;
+            margin-left: 5%;
         }
 
         .apresentacao h1 {
+            text-align: center;
             margin-top: 20px;
             text-transform: uppercase;
             font-weight: 900;
@@ -83,9 +86,9 @@
         }
 
         .apresentacao .apresentacaoEspaco {
-            margin-top: 3vh;
+            margin-top: 20px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
 
         }
@@ -109,7 +112,7 @@
         }
 
         .apresentacao .apresentacaoEspaco .quemSou {
-            width: 47%;
+            width: 49%;
             height: 42vh;
             padding: 10px;
         }
@@ -122,17 +125,16 @@
 
         .partido {
             margin-top: 4vh;
-            padding: 20px;
             width: 100%;
-            height: 115vh;
+            min-height: 880px;
 
         }
 
         .partido .cima {
             display: flex;
             justify-content: space-evenly;
-            height: 35vh;
-
+            height: 270px;
+            margin-left: 3%;
 
         }
 
@@ -185,13 +187,13 @@
 
         .meio {
             margin-top: 1vh;
-            height: 55vh;
-            padding: 20px;
-            width: 100%;
+            height: 480px;
+            
+            width: 90%;
+            margin-left: 5%;
         }
 
         .meio p {
-
             text-indent: 20px;
             font-size: 20px;
             text-align: justify;
@@ -206,7 +208,7 @@
 
         .meio .vandao img {
             width: 20%;
-            height: 28vh;
+            height: 240px;
             margin-top: 2vh;
             border-radius: 20px;
             box-shadow: 0px 0px 5px black;
@@ -229,22 +231,30 @@
             font-weight: 600;
         }
 
-        .baixo ul {
+        .baixo {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 2%;
+            height: 80px;
+            margin-top: 25px;
+            
+
         }
 
-        .baixo p {
+        .baixo ul {
+            width: 100%;
+           display: flex;
+            gap: 20px;
+            list-style: none;
+            
+        }
 
-            margin-top: 3vh;
-            width: 95%;
+        .baixo ul p{
+
+            width: 100%;
             text-indent: 20px;
             font-size: 20px;
             text-align: justify;
-        }
 
+        }
 
     </style>
 
@@ -278,47 +288,57 @@
             <img class="banner" src="Imagens/CampanhaRuaMindinho.png" alt="">
         </div>
 
-        <div class="apresentacao">
-            <div class="titulo">
-                <div class="linha"></div>
-                <h1 class="fonteTitulo">Victor Arista - Mindinho</h1>
-                <div class="linha"></div>
-            </div>
-
-            <h2 class="fonteTitulo">Candidato a vereador de Manuel Ribas</h2>
-
-            <div class="apresentacaoEspaco">
-                <div class="quemSou">
-                    <h3 class="fonteTitulo">Quem é o Mindinho?</h3>
-                    <p class="fonteTexto">
-                        Victor Arista, ou como prefere ser chamado, Mindinho, creceu em São Paulo, nasceu em 1991 e
-                        atualemente tem 35 anos. Cresceu muito feliz e amado por seus pais, sempre teve sua família como
-                        inspiração para seguir em frente. Se formou em Direito e se especializou em Direitos
-                        Urbanisticos e
-                        Direitos Difusos. Após concluir sua graduação, Ele se mudou para Manuel Ribas para ajudar sua
-                        avó
-                        doente, onde fundou suas raizes e conquistou todos a sua volta. Atualmente Mindinho faz parte do
-                        PPC
-                        - Partido das pequenas causas. O partido buscava pessoas fortes mentalmente e que tivessem
-                        experiências próprias para ajudar o povo, e Mindinho se encaixava perfeitamente.
-                    </p>
+        <div class="apresentacaoFundo">
+            <div class="apresentacao">
+                <div class="titulo">
+                    <div class="linha"></div>
+                    <h1 class="fonteTitulo">Victor Arista - Mindinho</h1>
+                    <div class="linha"></div>
                 </div>
 
-                <div class="porQueCandidatura">
-                    <h3 class="fonteTitulo">Por que a candidatura?</h3>
-                    <p class="fonteTexto"> Desde pequeno, ou melhor, desde quando era criança, Mindinho sempre precisou
-                        lidar com barreiras físicas e com preconcietos por conta de sua condição. Isso o desmotivou
-                        bastante
-                        durante sua carreira, porém abriu os olhos para as injustiças que foram cometidas com ele e
-                        todas as
-                        pessoas com sua condição. A partir disso, ele percebeu que se alguém não tentasse mudar isso,
-                        eles
-                        continuariam vivendo tristes e menosprezados, assim ele ingressou para a política. Entre suas
-                        propostas, Mindinho visa dar acessibilidade a todas as pessoas que sofrem por conta de condições
-                        físicas ou mentais de que não possuem culpa.</p>
+                <h2 class="fonteTitulo">Candidato a vereador de Manuel Ribas</h2>
+
+                <div class="apresentacaoEspaco">
+                    <div class="quemSou">
+                        <h3 class="fonteTitulo">Quem é o Mindinho?</h3>
+                        <p class="fonteTexto">
+                            Victor Arista, ou como prefere ser chamado, Mindinho, creceu em São Paulo, nasceu em 1991 e
+                            atualemente tem 35 anos. Cresceu muito feliz e amado por seus pais, sempre teve sua família
+                            como
+                            inspiração para seguir em frente. Se formou em Direito e se especializou em Direitos
+                            Urbanisticos e
+                            Direitos Difusos. Após concluir sua graduação, Ele se mudou para Manuel Ribas para ajudar
+                            sua
+                            avó
+                            doente, onde fundou suas raizes e conquistou todos a sua volta. Atualmente Mindinho faz
+                            parte do
+                            PPC
+                            - Partido das pequenas causas. O partido buscava pessoas fortes mentalmente e que tivessem
+                            experiências próprias para ajudar o povo, e Mindinho se encaixava perfeitamente.
+                        </p>
+                    </div>
+
+                    <div class="porQueCandidatura">
+                        <h3 class="fonteTitulo">Por que a candidatura?</h3>
+                        <p class="fonteTexto"> Desde pequeno, ou melhor, desde quando era criança, Mindinho sempre
+                            precisou
+                            lidar com barreiras físicas e com preconcietos por conta de sua condição. Isso o desmotivou
+                            bastante
+                            durante sua carreira, porém abriu os olhos para as injustiças que foram cometidas com ele e
+                            todas as
+                            pessoas com sua condição. A partir disso, ele percebeu que se alguém não tentasse mudar
+                            isso,
+                            eles
+                            continuariam vivendo tristes e menosprezados, assim ele ingressou para a política. Entre
+                            suas
+                            propostas, Mindinho visa dar acessibilidade a todas as pessoas que sofrem por conta de
+                            condições
+                            físicas ou mentais de que não possuem culpa.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="partido">
             <div class="cima">
@@ -400,8 +420,8 @@
                             </p>
                         </li>
 
-                        <li>
-                            <p class="fonteTexto">
+                        <li class="p2">
+                            <p class="fonteTexto ">
                                 2012 (A Consolidação da Bancada da Inclusão): O PPC passou por uma reformulação interna,
                                 passando a acolher ativistas de causas específicas que não encontravam espaço nos
                                 grandes
