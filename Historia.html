@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História Mindinho</title>
+
+    <link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link bootstrap -->
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
+    <style>
+        .titulo {
+            width: 100%;
+            height: 150px;
+            background-color: gold;
+
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        .titulo .textos {
+            text-align: center;
+            text-transform: uppercase;
+            width: 45%;
+        }
+
+        .titulo .textos h1 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 50px;
+            color: navy;
+            text-shadow: 2px 2px 5px goldenrod;
+        }
+
+        .titulo .quemMindinhoImg {
+            width: 10%;
+        }
+
+        .titulo .quemMindinhoImg img {
+            margin-top: 25px;
+            width: 80%;
+            height: 100px;
+        }
+
+        .img1,
+        .img3 {
+            transform: rotate(-15deg);
+        }
+
+        .img2,
+        .img4 {
+            transform: rotate(15deg);
+        }
+
+        .mindinhoImg img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 8px black;
+            border-radius: 20px;
+        }
+
+        .mindinhoImg {
+
+            width: 90%;
+            margin: auto;
+            height: 770px;
+            margin-top: 30px;
+
+        }
+
+        .linha {
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 95%;
+            height: 3px;
+            background-color: rgba(211, 211, 211, 0.418);
+        }
+
+        .historiaApres {
+
+            width: 90%;
+            height: 350px;
+            margin: auto;
+
+        }
+
+        .historiaApres p,
+        .historiaInf .divisaoInf .textoInf p,
+        .vidaAcademica .textoEscola p,
+        .graduacao .textoGraduacao p,
+        .historiaPartido .esqPartido p,
+        .historiaPartido .dirPartido p 
+         {
+            width: 100%;
+            text-indent: 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .evidencia {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        .historiaInf .divisaoInf {
+
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .historiaInf .divisaoInf h3 {
+            text-transform: uppercase;
+            text-align: center;
+            color: navy;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .historiaInf .divisaoInf .textoInf .tit {
+            margin-top: 40px;
+
+        }
+
+        .historiaInf .divisaoInf .polaroid {
+
+            transform: rotate(-3deg);
+           
+        }
+
+        .polaroid {
+             width: 30%;
+            height: 480px;
+            background-color: white;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .polaroid img {
+            margin-top: 30px;
+            width: 85%;
+            margin-left: 7.5%;
+        }
+
+        .historiaInf .divisaoInf .polaroid .textoBebe {
+
+            margin-left: 14%;
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: justify;
+            font-style: italic;
+        }
+
+        .historiaInf .divisaoInf .textoInf {
+            width: 68%;
+        }
+
+        .historiaInf .divisaoInf .textoInf .text3 {
+            margin-top: 20px;
+        }
+
+        .vidaAcademica .textoEscola {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            
+            p {
+                margin-bottom: 5px;
+            }
+        }
+
+        .corFtsPolaroid {
+            width: 100%;
+            background-color: gold;
+            margin-top: 30px;
+            height: 550px;
+        }
+
+         .vidaAcademica .corFtsPolaroid .fotosPolaroid {
+           
+            width: 90%;
+            margin-left: 5%;
+           
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .vidaAcademica .corFtsPolaroid .fotosPolaroid .polaroid {
+            margin-top: 35px;
+        }
+
+        .vidaAcademica .corFtsPolaroid .fotosPolaroid .pl1, 
+        .vidaAcademica .corFtsPolaroid .fotosPolaroid .pl3 {
+            transform: rotate(-2deg);
+        }
+
+        .vidaAcademica .corFtsPolaroid .fotosPolaroid .pl2 {
+           transform: rotate(2deg); 
+           margin-left: 5px;
+        }
+
+        .graduacao {
+            width: 90%;
+            height: 310px;
+            
+            margin-left: 5%;
+
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .graduacao .textoGraduacao {
+            width: 68%;
+            
+        }
+
+        .graduacao .textoGraduacao h3 {
+            margin-top: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            color: navy;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .graduacao .textoGraduacao .gradP {
+            margin-bottom: 10px;
+        }
+
+        .graduacao .imgGraduacao {
+            width: 30%;
+            
+        }
+
+        .graduacao .imgGraduacao img {
+            width: 100%;
+            height: 280px;
+            
+            border-radius: 20px;
+
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .historiaPartido {
+            width: 90%;
+            margin-left: 5%;
+            height: 240px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .historiaPartido .esqPartido {
+            width: 49%;
+        }
+
+        .historiaPartido .dirPartido {
+            width: 49%;
+        }
+
+        .historiaPartido .p2 {
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="imagensPartido">
+            <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+            <img src="/Imagens/PPCsiglaBranca.png" alt="">
+        </div>
+
+        <div class="menu">
+            <ul class="menuLista fonteTitulo">
+                <li><a href="index.html" class="NavLinks">Pagina Inicial</a></li>
+                <li><a href="#" class="NavLinks">História</a></li>
+                <li><a href="Propostas.html" class="NavLinks">Propostas</a></li>
+                <li><a href="Album.html" class="NavLinks">Album de Campanha</a></li>
+                <li><a href="Agenda.html" class="NavLinks">Agenda</a></li>
+                <li><a href="Jingle.html" class="NavLinks">Jingle</a></li>
+                <li><a href="Contato.html" class="NavLinks">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="titulo">
+
+            <div class="quemMindinhoImg img1">
+                <img src="/Imagens/InterrogacaoMindinho.png" alt="">
+            </div>
+
+            <div class="quemMindinhoImg img2">
+                <img src="/Imagens/InterrogacaoMindinho.png" alt="">
+            </div>
+
+            <div class="textos fonteTitulo">
+                <h1>Quem é o Mindinho?</h1>
+                <h2>Canditado a Vereador de Manuel Ribas</h2>
+            </div>
+
+            <div class="quemMindinhoImg img3">
+                <img src="/Imagens/InterrogacaoMindinho.png" alt="">
+            </div>
+
+            <div class="quemMindinhoImg img4">
+                <img src="/Imagens/InterrogacaoMindinho.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="mindinhoImg">
+            <img src="/Imagens/Mindinho.png" alt="">
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="historiaApres">
+
+
+            <p class="fonteTexto">
+                Quem vê Victor Arista caminhando pelas ruas da cidade já sabe: ali vai um gigante em carisma e
+                determinação. Para os mais chegados, ele é simplesmente o Vic Arista. Para a fã-base que conquistou na
+                internet e nas comunidades, ele atende por um apelido que carrega com orgulho e muito bom humor:
+                Mindinho.
+            </p>
+
+            <p class="fonteTexto">
+                Longe de ser um apelido pejorativo, "Mindinho" virou sua marca registrada. Afinal, como ele mesmo
+                costuma brincar em suas caminhadas:
+            </p>
+
+            <p class="fonteTexto evidencia">
+                "O mindinho pode ser o menor dos dedos, mas tenta fechar o punho sem ele para ver se você tem força. A
+                base de tudo começa no que parece pequeno."
+            </p>
+
+            <p class="fonteTexto"> Nascido com nanismo, Victor nunca deixou que a estatura definisse o tamanho dos
+                seus sonhos.Enquanto a sociedade insistia em olhar para baixo, ele aprendeu a olhar para a frente,
+                enxergando os problemas da cidade sob uma perspectiva única. Sentindo na pele a falta de
+                acessibilidade urbana, o preconceito velado e a invisibilidade das minorias, Vic cansou de esperar
+                que os "grandes" resolvessem as coisas. Decidiu ele mesmo ocupar o espaço. A história de Victor
+                "Mindinho" Arista é um exemplo de superação, resiliência e quebra de barreiras
+                na política e na sociedade. Enfrentando o preconceito estrutural e os desafios diários da falta de
+                acessibilidade para pessoas com nanismo, ele transformou suas lutas em sua principal plataforma de
+                ação pública.
+            </p>
+
+
+        </div>
+
+        <div class="historiaInf">
+
+            <div class="divisaoInf">
+
+                <div class="polaroid">
+                    <img src="/Imagens/BebeMindinho.png" alt="">
+
+                    <p class="fonteTexto textoBebe">Mindinho com 7 meses de idade</p>
+
+                </div>
+
+                <div class="textoInf">
+
+                    <h3 class="fonteTitulo">Infância do Mindinho</h3>
+                    <p class="fonteTexto">Victor Arista nasceu no dia 14 de maio de 1991, na cidade de Santo André, no
+                        ABC
+                        Paulista. Filho de uma professora da rede pública e de um mecânico industrial, Victor foi
+                        diagnosticado com acondroplasia (o tipo mais comum de nanismo) ainda nos primeiros meses de
+                        vida.
+                    </p>
+
+                    <p class="fonteTexto">Ele cresceu no bairro de Utinga, uma região operária de Santo André. Desde
+                        cedo, a dinâmica da sua casa foi adaptada pelos pais para que ele desenvolvesse o máximo de
+                        autonomia possível, instalando interruptores de luz mais baixos e degraus portáteis, um
+                        prenúncio do que Victor faria, anos mais tarde, em escala municipal.
+                    </p>
+
+                    <p class="fonteTexto text3">Crescer com nanismo significou, para Victor, enfrentar um mundo que não
+                        foi planejado para o seu corpo. Desde a infância, ele precisou lidar não apenas com a barreira
+                        física — como balcões altos, transporte público inadequado e falta de acessibilidade básica —,
+                        mas também com o preconceito social disfarçado de "piada" ou infantilização.</p>
+
+                    <p class="fonteTexto evidencia">"A maior dificuldade do nanismo não é a altura, é o olhar de
+                        inferioridade que a sociedade projeta em você." — Victor "Mindinho" Arista
+                    </p>
+
+                    <h3 class="fonteTitulo tit">Vida Acadêmica do Mindinho</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="vidaAcademica">
+            <div class="textoEscola">
+                <p class="fonteTexto">A vida escolar de Victor foi o seu primeiro grande campo de batalha contra o
+                    preconceito. Na infância, as brincadeiras e o isolamento por parte de alguns colegas eram comuns,
+                    mas foi na transição para a adolescência que ele decidiu mudar o jogo. Dotado de uma comunicação
+                    verbal afiada e de um senso de humor inteligente, Victor usou a oratória para desarmar os valentões
+                    da escola.
+                </p>
+
+                <p class="fonteTexto">Em vez de se retrair, ele se envolveu no Grêmio Estudantil do colégio estadual
+                    onde estudava. Foi nessa época que o apelido "Mindinho" surgiu. Inicialmente uma provocação de
+                    colegas de sala, Victor adotou o codinome de forma irônica em sua campanha para a presidência do
+                    grêmio. Ele venceu a eleição escolar com o slogan: "O menor tamanho com as maiores ideias". A partir
+                    dali, o apelido virou sinônimo de liderança.
+                </p>
+
+                <p class="fonteTexto">Victor decidiu que não aceitaria o papel de vítima ou de mero entretenimento,
+                    estereótipos historicamente atrelados a pessoas com a sua condição. Focado nos estudos e no
+                    desenvolvimento de sua liderança comunitária, ele usou o apelido "Mindinho" — que antes poderia ser
+                    pejorativo — como uma marca de orgulho, ressignificando-o para mostrar que grandes mudanças podem
+                    vir dos menores detalhes.
+                </p>
+            </div>
+
+            <div class="corFtsPolaroid">
+                 <div class="fotosPolaroid">
+                <div class="polaroid pl1">
+                    <img src="/Imagens/MindinhoCrianças.png" alt="">
+                </div>
+
+                 <div class="polaroid pl2">
+                    <img src="/Imagens/MindinhoGremio.png" alt="">
+                </div>
+
+                 <div class="polaroid pl3">
+                    <img src="/Imagens/MindinhoEstudando.png" alt="">
+                </div>
+            </div>
+            </div>
+           
+        </div>
+
+        <div class="graduacao">
+
+            <div class="textoGraduacao">
+                <p class="fonteTexto gradP"> Determinado a entender os mecanismos que movem as estruturas urbanas e sociais, Victor mudou-se para a capital paulista após o colégio. Em 2009, ingressou na prestigiada Faculdade de Direito da Universidade de São Paulo (USP), no Largo São Francisco.
+                </p>
+
+                <p class="fonteTexto">Durante os anos de graduação, Victor especializou-se em Direito Urbanístico e Direitos Difusos. Sua tese de conclusão de curso foi pioneira, intitulada "O Desenho Universal e a Invisibilidade Jurídica dos Corpos com Nanismo no Espaço Público". Foi no ambiente universitário que ele refinou sua capacidade técnica para redigir projetos de lei e entender como a burocracia do Estado poderia ser usada para fins de inclusão social.
+                </p>
+
+                <h3 class="fonteTitulo tit">Entrada no Partido das Pequenas Causas</h3>
+            </div>
+
+            <div class="imgGraduacao">
+                <img src="/Imagens/FormaturaMindinho.png" alt="">
+            </div>
+        </div>
+
+        <div class="historiaPartido">
+            <div class="esqPartido">
+                 <p class="fonteTexto">
+                A chegada de Victor à política institucional aconteceu de forma natural, movida pela indignação. Cansado de ver as demandas de minorias e de pessoas com deficiência serem tratadas como "pautas secundárias" pelos grandes partidos, ele encontrou o seu lugar ideal no PPC (Partido das Pequenas Causas).
+            </p>
+
+            <p class="fonteTexto p2">
+                O fundador do partido, Geraldo "Vandão" Santos, assistiu a uma palestra de Victor sobre a falta de acessibilidade no transporte público e o convidou imediatamente para se filiar à legenda.
+            </p>
+            </div>
+
+            <div class="dirPartido">
+                <p class="fonteTexto">
+                    Após se formar, Victor passou anos atuando como consultor jurídico para ONGs de direitos humanos e associações de acessibilidade. Sua entrada para a política partidária aconteceu em setembro de 2025, durante um ciclo de debates promovido pelo PPC (Partido das Pequenas Causas).
+                </p>
+
+                <p class="fonteTexto p2">
+                    O PPC buscava nomes técnicos, mas que tivessem forte vivência popular, conhecido por focar em demandas locais, direitos civis cotidianos e naquilo que a macro-política costuma ignorar, viu em Victor a liderança perfeita.
+
+                </p>
+            </div>
+           
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="linhaFooter"></div>
+
+        <div class="itensFooter">
+
+            <div class="localizacao">
+
+                <div class="imagensPartido">
+                    <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+                    <img src="/Imagens/PPCsiglaBranca.png" alt="">
+                </div>
+
+                <p class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Getulio Vargas, n° 2890 - São Paulo, Brasil</p>
+            </div>
+
+            <div class="redes">
+
+                <p class="fonteTexto">Siga nossas redes: 
+
+                </p>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-threads"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="politica">
+                <p class="fonteTexto">Políticas: </p>
+                <a class="fonteTexto" href="">Politica de Cookies</a>
+                <a class="fonteTexto" href="">Politica de Privacidade</a>
+            </div>
+
+        </div>
+
+         <div class="linhaFooter"></div>
+    </footer>
+
+</body>
+
+</html>
