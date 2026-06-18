@@ -21,11 +21,10 @@
             font-family: Arial, sans-serif;
             background-color: #f4f7f6;
             color: #333;
-            padding: 20px;
         }
 
         .calendario-container {
-            max-width: 900px;
+            max-width: 90%;
             margin: 0 auto;
             background: #fff;
             padding: 20px;
@@ -36,7 +35,7 @@
         h2 {
             text-align: center;
             color: #1a365d;
-            /* Azul tipicamente institucional/político */
+            
             margin-bottom: 5px;
         }
 
@@ -61,7 +60,7 @@
         }
 
         th {
-            background-color: #2b6cb0;
+            background-color: navy;
             color: white;
             text-align: center;
             font-weight: bold;
@@ -81,7 +80,7 @@
             margin-bottom: 5px;
         }
 
-        /* Dias de outros meses (vazio/desativado) */
+       
         .compromisso {
             font-size: 0.8rem;
             padding: 4px 6px;
@@ -89,17 +88,22 @@
             margin-top: 4px;
             color: white;
             font-weight: 500;
+            transition: 555ms;
+            transform:scale(1);
         }
 
-        /* Cores temáticas para os eventos da campanha */
+        .compromisso:hover {
+            transform:scale(1.05);
+        }
+
+        
         .comicio {
-            background-color: #e53e3e;
-            /* Vermelho/Alerta/Grande Evento */
+            background-color: goldenrod;
+            
         }
 
         .reuniao {
-            background-color: #dd6b20;
-            /* Laranja/Interno */
+            background-color: gold;
         }
 
         .vazio {
@@ -218,11 +222,738 @@
             </table>
         </div>
 
+        <!-- FEVEREIRO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Fevereiro 2026</h2>
+            <p class="subtitulo">Mês de Transição Institucional</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MARÇO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Março 2026</h2>
+            <p class="subtitulo">Articulação de Base</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td>
+                            <span class="dia-numero">14</span>
+                            <div class="compromisso reuniao">Encontro com Lideranças de Bairro</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td>
+                            <span class="dia-numero">28</span>
+                            <div class="compromisso comicio">Ato de Filiação Partidária</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td><span class="dia-numero">31</span></td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ABRIL -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Abril 2026</h2>
+            <p class="subtitulo">Visitas Regionais</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td>
+                            <span class="dia-numero">4</span>
+                            <div class="compromisso reuniao">Visita ao Mercado Municipal</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td>
+                            <span class="dia-numero">18</span>
+                            <div class="compromisso reuniao">Reunião Associação Comercial</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MAIO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Maio 2026</h2>
+            <p class="subtitulo">Aproximação com o Setor Produtivo</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                        <td>
+                            <span class="dia-numero">1</span>
+                            <div class="compromisso comicio">Evento Dia do Trabalhador</div>
+                        </td>
+                        <td><span class="dia-numero">2</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td>
+                            <span class="dia-numero">12</span>
+                            <div class="compromisso reuniao">Palestra Universitária</div>
+                        </td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td>
+                            <span class="dia-numero">30</span>
+                            <div class="compromisso reuniao">Reunião Coordenação de Campanha</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">31</span></td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- JUNHO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Junho 2026</h2>
+            <p class="subtitulo">Preparação para as Convenções</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td>
+                            <span class="dia-numero">6</span>
+                            <div class="compromisso reuniao">Arraiá Comunitário</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td>
+                            <span class="dia-numero">18</span>
+                            <div class="compromisso reuniao">Entrevista Rádio Local</div>
+                        </td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td>
+                            <span class="dia-numero">20</span>
+                            <div class="compromisso comicio">Comício Zona Norte</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td>
+                            <span class="dia-numero">30</span>
+                            <div class="compromisso reuniao">Balanço Semestral com Diretório</div>
+                        </td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- JULHO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Julho 2026</h2>
+            <p class="subtitulo">Abertura Oficial de Pré-Campanha</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td>
+                            <span class="dia-numero">4</span>
+                            <div class="compromisso comicio">Convenção Partidária Oficial</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td>
+                            <span class="dia-numero">16</span>
+                            <div class="compromisso reuniao">Sabatina no Sindicato</div>
+                        </td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td>
+                            <span class="dia-numero">18</span>
+                            <div class="compromisso comicio">Carreata Zona Leste</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td>
+                            <span class="dia-numero">25</span>
+                            <div class="compromisso comicio">Adesivaço Massivo</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td><span class="dia-numero">31</span></td>
+                        <td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- AGOSTO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Agosto 2026</h2>
+            <p class="subtitulo">Intensificação e Corpo a Corpo</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                        <td>
+                            <span class="dia-numero">1</span>
+                            <div class="compromisso comicio">Caminhada Calçadão</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td>
+                            <span class="dia-numero">4</span>
+                            <div class="compromisso reuniao">Debate Televisivo</div>
+                        </td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td>
+                            <span class="dia-numero">8</span>
+                            <div class="compromisso comicio">Grande Comício Regional</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td>
+                            <span class="dia-numero">12</span>
+                            <div class="compromisso reuniao">Gravação Inserções TV</div>
+                        </td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td>
+                            <span class="dia-numero">15</span>
+                            <div class="compromisso comicio">Motociata</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td>
+                            <span class="dia-numero">22</span>
+                            <div class="compromisso reuniao">Reunião Fórum Comunitário</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td>
+                            <span class="dia-numero">29</span>
+                            <div class="compromisso comicio">Ato na Praça Matriz</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">30</span></td>
+                        <td><span class="dia-numero">31</span></td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SETEMBRO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Setembro 2026</h2>
+            <p class="subtitulo">Reta Final de Campanha</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td>
+                            <span class="dia-numero">3</span>
+                            <div class="compromisso reuniao">Último Debate na TV</div>
+                        </td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td>
+                            <span class="dia-numero">5</span>
+                            <div class="compromisso comicio">Carreata Histórica</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td>
+                            <span class="dia-numero">10</span>
+                            <div class="compromisso reuniao">Entrevista Podcast Local</div>
+                        </td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td>
+                            <span class="dia-numero">12</span>
+                            <div class="compromisso comicio">Bandeiraço em Vias Principais</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td>
+                            <span class="dia-numero">16</span>
+                            <div class="compromisso reuniao">Reunião Fechada de Coordenação</div>
+                        </td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td>
+                            <span class="dia-numero">19</span>
+                            <div class="compromisso comicio">Comício Show Zona Oeste</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td>
+                            <span class="dia-numero">26</span>
+                            <div class="compromisso comicio">MEGA Comício de Encerramento</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td>
+                            <span class="dia-numero">29</span>
+                            <div class="compromisso reuniao">Vigília e Alinhamento Fiscalização</div>
+                        </td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- OUTUBRO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Outubro 2026</h2>
+            <p class="subtitulo">Mês das Eleições</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="dia-numero">4</span>
+                            <div class="compromisso comicio">DIA DA VOTAÇÃO</div>
+                        </td>
+                        <td>
+                            <span class="dia-numero">5</span>
+                            <div class="compromisso reuniao">Coletiva de Imprensa - Balanço</div>
+                        </td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="dia-numero">25</span>
+                            <div class="compromisso comicio">DIA DE VOTAÇÃO (2º TURNO, se houver)</div>
+                        </td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td><span class="dia-numero">31</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOVEMBRO -->
+        <div class="calendario-container" style="margin-top: 40px;">
+            <h2>Novembro 2026</h2>
+            <p class="subtitulo">Pausa para Reorganização</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DEZEMBRO -->
+        <div class="calendario-container" style="margin-top: 40px; margin-bottom: 60px;">
+            <h2>Dezembro 2026</h2>
+            <p class="subtitulo">Transição e Preparação de Mandato</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="vazio"></td><td class="vazio"></td>
+                        <td><span class="dia-numero">1</span></td>
+                        <td><span class="dia-numero">2</span></td>
+                        <td><span class="dia-numero">3</span></td>
+                        <td><span class="dia-numero">4</span></td>
+                        <td><span class="dia-numero">5</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">6</span></td>
+                        <td><span class="dia-numero">7</span></td>
+                        <td><span class="dia-numero">8</span></td>
+                        <td><span class="dia-numero">9</span></td>
+                        <td><span class="dia-numero">10</span></td>
+                        <td><span class="dia-numero">11</span></td>
+                        <td><span class="dia-numero">12</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">13</span></td>
+                        <td><span class="dia-numero">14</span></td>
+                        <td><span class="dia-numero">15</span></td>
+                        <td><span class="dia-numero">16</span></td>
+                        <td><span class="dia-numero">17</span></td>
+                        <td><span class="dia-numero">18</span></td>
+                        <td><span class="dia-numero">19</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">20</span></td>
+                        <td><span class="dia-numero">21</span></td>
+                        <td><span class="dia-numero">22</span></td>
+                        <td><span class="dia-numero">23</span></td>
+                        <td><span class="dia-numero">24</span></td>
+                        <td><span class="dia-numero">25</span></td>
+                        <td><span class="dia-numero">26</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="dia-numero">27</span></td>
+                        <td><span class="dia-numero">28</span></td>
+                        <td><span class="dia-numero">29</span></td>
+                        <td><span class="dia-numero">30</span></td>
+                        <td><span class="dia-numero">31</span></td>
+                        <td class="vazio"></td><td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
 
 
     </main>
 
-    <!-- <footer>  
+     <footer>  
         <div class="linhaFooter"></div>
 
         <div class="itensFooter">
@@ -258,7 +989,7 @@
         </div>
 
          <div class="linhaFooter"></div>
-    </footer> -->
+    </footer> 
 
 
 </body>
