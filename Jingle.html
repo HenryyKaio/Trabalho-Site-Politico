@@ -29,6 +29,17 @@
             border-radius: 20px;
         }
 
+        h1{
+            color:gold;
+        }
+
+        .Titulo h1{
+            font-size: 40px;
+            text-align: center;
+            padding-top: 150px;
+            color: navy;
+        }
+
         .disco {
             width: 60px;
             height: 58px;
@@ -44,17 +55,19 @@
         }
 
         main {
-            padding-top: 150px;
             display: flex;
-            gap: 2vw;
-            justify-content: center;
-            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            background-color: #3622bb;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-bottom: 100px;
         }
 
         .Letra {
             width: 100%;
-            padding-left: 300px;
-            padding-right: 300px;
+            padding-left: 250px;
+            padding-right: 100px;
         }
 
         .Letra p {
@@ -62,9 +75,25 @@
             line-height: 1.5;
             text-align: center;
             text-justify: inter-word;
-            color: #333;
+            color: white;
             margin-bottom: 60px;
             margin-top: 20px;
+        }
+
+        .imagem {
+            margin-top: 100px;
+            width: 600px;
+            height:400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin-left: 50px;
+        }
+
+        .imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
 
@@ -106,7 +135,12 @@
 
     </header>
 
+    <section class="Titulo">
+        <h1>Ouça o Jingle oficial do Mindinho!</h1>
+    </section>
+
     <main>
+        <div class="containerMusica">
         <div class="Musica">
             <audio controls>
                 <source src="Mindinho 14.mp3" type="audio/mpeg">
@@ -137,16 +171,22 @@
             </div>
         </div>
 
+        <div class="imagem">
+            <img src="Imagens/CidadeJingle.png" alt="Imagem ilustrativa do jingle">    
+        </div>
+
+        </div>
+
         <div class="Letra">
             <h1 class="fonteTitulo" style="text-align: center;">Cante conosco!</h1>
-            <p>
+            <p class="fonteTexto">
                 Chegou a hora, o povo já chamou<br>
                 A força do trabalho na cidade começou<br>
                 Não fique aí parado, mude de opinião<br>
                 Vem com a gente, vem de coração!<br>
             </p>
 
-            <p>
+            <p class="fonteTexto">
                 Mindinho! (Mindinho!)<br>
                 Mindinho! (Mindinho!)<br>
                 Vota 14 ! Vota 14!<br>
@@ -156,14 +196,14 @@
                 Voto certo é 14!<br>
             </p>
 
-            <p>
+            <p class="fonteTexto">
                 É o piseiro da renovação<br>
                 Mindinho é a voz de toda a região<br>
                 Para o futuro que a gente quer ver<br>
                 14 é o número que você vai escolher!<br>
             </p>
 
-            <p>
+            <p class="fonteTexto">
                 Mindinho! (Mindinho!)<br>
                 Mindinho! (Mindinho!)<br>
                 Vota 14! Vota 14!<br>
@@ -175,7 +215,7 @@
         </div>
     </main>
 
-    <!-- <footer>  
+     <footer>  
         <div class="linhaFooter"></div>
 
         <div class="itensFooter">
@@ -211,7 +251,7 @@
         </div>
 
          <div class="linhaFooter"></div>
-    </footer> -->
+    </footer> 
 
 
 </body>
