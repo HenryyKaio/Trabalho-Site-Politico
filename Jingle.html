@@ -19,30 +19,44 @@
 
     <style>
         .Musica {
-            width: 370px;
-            margin-left: 1vw;
+            width: 500px;
             display: flex;
             align-items: center;
             gap: 15px;
-            background-color: gold;
-            padding: 12px;
+            background-color: rgb(58, 58, 222);
+            padding: 16px;
             border-radius: 20px;
+            margin: 25px auto;
+        }
+
+        .Musica audio{
+            width: 400px;
         }
 
         h1{
-            color:gold;
+            color:navy;
         }
+
+        .containerMusica{
+            width: calc(100% - 600px - 20%);
+            margin-left: 5%;
+            height: 85%;
+            margin: 2% auto;
+        }
+        
 
         .Titulo h1{
             font-size: 40px;
             text-align: center;
             padding-top: 150px;
             color: navy;
+            font-weight: 900;
+            font-size: 50px;
         }
 
         .disco {
-            width: 60px;
-            height: 58px;
+            width: 70px;
+            height: 68px;
             background-image: url('Imagens/disco.png');
             background-size: cover;
             border-radius: 50%;
@@ -56,18 +70,24 @@
 
         main {
             display: flex;
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
-            background-color: #3622bb;
+            background-color: gold;
             border-radius: 20px;
             margin-top: 50px;
             margin-bottom: 100px;
+            height: 1200px;
         }
 
         .Letra {
-            width: 100%;
-            padding-left: 250px;
-            padding-right: 100px;
+            width: 600px;
+            background-color: white;
+            border-radius: 20px;
+            height: 93%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            margin-top: 2%;
+            margin-right: 5%;
         }
 
         .Letra p {
@@ -75,25 +95,30 @@
             line-height: 1.5;
             text-align: center;
             text-justify: inter-word;
-            color: white;
             margin-bottom: 60px;
             margin-top: 20px;
         }
 
         .imagem {
-            margin-top: 100px;
+            margin-top: 60px;
             width: 600px;
-            height:400px;
+            height:450px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
-            margin-left: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 5px;
         }
 
         .imagem img {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 300px;
             object-fit: cover;
-            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .imagem2{
+            margin-top: 25px;
         }
 
 
@@ -136,7 +161,7 @@
     </header>
 
     <section class="Titulo">
-        <h1>Ouça o Jingle oficial do Mindinho!</h1>
+        <h1 class="fonteTitulo">Ouça o Jingle oficial do Mindinho!</h1>
     </section>
 
     <main>
@@ -173,6 +198,10 @@
 
         <div class="imagem">
             <img src="Imagens/CidadeJingle.png" alt="Imagem ilustrativa do jingle">    
+        </div>
+
+        <div class="imagem imagem2">
+            <img src="Imagens/MindinhoCantando.png" alt="Imagem ilustrativa do jingle">    
         </div>
 
         </div>
