@@ -18,31 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
 
     <style>
-        .Musica {
-            width: 500px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            background-color: rgb(58, 58, 222);
-            padding: 16px;
-            border-radius: 20px;
-            margin: 25px auto;
-        }
-
-        .Musica audio{
-            width: 400px;
-        }
 
         h1{
             color:navy;
         }
 
-        .containerMusica{
-            width: calc(100% - 600px - 20%);
-            margin-left: 5%;
-            height: 85%;
-            margin: 2% auto;
-        }
         
 
         .Titulo h1{
@@ -70,57 +50,85 @@
 
         main {
             display: flex;
-            width: 80%;
-            margin: 0 auto;
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: flex-start; 
+            gap: 40px; 
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto 100px auto;
             background-color: gold;
             border-radius: 20px;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            height: 1200px;
+            padding: 40px;
+            box-sizing: border-box; 
         }
 
-        .Letra {
-            width: 600px;
-            background-color: white;
+        .containerMusica {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; 
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .Musica {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background-color: rgb(58, 58, 222);
+            padding: 16px;
             border-radius: 20px;
-            height: 93%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            margin-top: 2%;
-            margin-right: 5%;
+            box-sizing: border-box;
         }
 
-        .Letra p {
-            font-size: 23px;
-            line-height: 1.5;
-            text-align: center;
-            text-justify: inter-word;
-            margin-bottom: 60px;
-            margin-top: 20px;
+        .Musica audio{
+            width: 100%;
+            max-width: 400px;
         }
 
         .imagem {
-            margin-top: 60px;
-            width: 600px;
-            height:450px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
             background-color: white;
             display: flex;
             justify-content: center;
-            box-shadow: 0px 0px 5px;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px 0; 
         }
 
         .imagem img {
             width: 90%;
             height: 300px;
             object-fit: cover;
-            margin-top: 30px;
         }
 
         .imagem2{
             margin-top: 25px;
         }
 
+        .Letra {
+            flex: 1;
+            min-width: 320px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .Letra p {
+            font-size: 23px;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 40px; 
+            margin-top: 20px;
+        }
 
 
 
@@ -206,6 +214,7 @@
 
         </div>
 
+
         <div class="Letra">
             <h1 class="fonteTitulo" style="text-align: center;">Cante conosco!</h1>
             <p class="fonteTexto">
@@ -242,6 +251,7 @@
                 Para mindinho vota 14!<br>
             </p>
         </div>
+
     </main>
 
      <footer>  
