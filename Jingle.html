@@ -83,6 +83,7 @@
             padding: 16px;
             border-radius: 20px;
             box-sizing: border-box;
+            animation: pulsar 6s linear infinite;
         }
 
         .Musica audio{
@@ -98,14 +99,15 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            padding: 20px 0; 
+            padding-top: 20px;
+            padding-bottom: 70px;
         }
 
         .imagem img {
             width: 90%;
             height: 300px;
             object-fit: cover;
+            border: 2px solid black;
         }
 
         .imagem2{
@@ -141,7 +143,20 @@
                 transform: rotate(360deg);
             }
         }
-
+        
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
     </style>
 
 </head>
