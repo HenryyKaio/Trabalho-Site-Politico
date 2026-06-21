@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <!-- Fontes -->
+
+    <style>
+        h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 150px;
+            color: navy;
+            font-weight: 900;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+        }
+
+        main {
+            width: 90%;
+            margin: 0 auto;
+            background-color: gold;
+            padding: 50px 0;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            border-radius: 20px;
+        }
+
+        .Contato {
+            width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: navy;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .input-single {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .input-single label {
+            position: absolute;
+            left: 0px;
+            bottom: 13px;
+            transition: all 200ms;
+            cursor: text;
+        }
+
+        .input {
+            width: 400px;
+            height: 40px;
+            border: 0;
+            border-bottom: 2px solid #ccc;
+            padding: 5px;
+            font-size: 17px;
+            outline: none;
+            margin-top: 20px;
+        }
+
+        form .input-single .input:focus~label,
+        form .input-single .input:valid~label {
+            transform: translateY(-30px);
+            font-size: 14px;
+            color: gold;
+        }
+
+        .input-single textarea {
+            width: 400px;
+            padding: 15px;
+            border: 2px solid #cbd5e1;
+            border-radius: 10px;
+            background-color: #f8fafc;
+            font-size: 16px;
+            font-family: inherit;
+            resize: vertical;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-single textarea:focus {
+            border-color: #3b82f6;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .radios {
+            width: 400px;
+        }
+
+        .radios label {
+            color: #f8fafc;
+            font-size: 20px;
+        }
+
+        input[type="radio"] {
+            width: 50px;
+            cursor: pointer;
+            margin-right: -15px;
+            accent-color: gold;
+        }
+
+        .texto-efeito {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+            /* Garante que o fundo tenha exatamente o tamanho do texto */
+
+            /* 1. Criamos um gradiente com o dobro do tamanho do texto */
+            /* Metade esquerda é a cor inicial (cinza), metade direita é a cor final (azul) */
+            background: linear-gradient(to right, white 50%, gold 50%);
+            background-size: 200% 100%;
+
+            /* 2. Posicionamos o fundo totalmente para a direita (mostrando a cor inicial) */
+            background-position: 0%;
+
+            /* 3. O TRUQUE: Faz o fundo ficar apenas "dentro" do formato das letras */
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* 4. Torna o texto original transparente para que o fundo apareça */
+            -webkit-text-fill-color: transparent;
+
+            /* Configura a transição suave do movimento do fundo */
+            transition: background-position 0.3s ease-in-out;
+        }
+
+        input[type="radio"]:checked+.texto-efeito {
+            background-position: -100%;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: gold;
+            color: navy;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="imagensPartido">
+            <img class="imgPartido1" src="Imagens/iconPPCbranco.png" alt="iconePPC">
+            <img src="Imagens/PPCsiglaBranca.png" alt="">
+        </div>
+
+        <div class="menu">
+            <ul class="menuLista fonteTitulo">
+                <li><a href="index.html" class="NavLinks">Pagina Inicial</a></li>
+                <li><a href="Historia.html" class="NavLinks">História</a></li>
+                <li><a href="Propostas.html" class="NavLinks">Propostas</a></li>
+                <li><a href="Album.html" class="NavLinks">Album de Campanha</a></li>
+                <li><a href="Agenda.html" class="NavLinks">Agenda</a></li>
+                <li><a href="Jingle.html" class="NavLinks">Jingle</a></li>
+                <li><a href="#" class="NavLinks linkPrincipal">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section>
+        <h1 class="fonteTitulo">Entre em Contato com o Mindinho!!</h1>
+    </section>
+
+    <main>
+
+
+
+        <section class="formularioContato">
+            <form action="" class="Contato">
+
+                <div class="input-single">
+                    <h2>Nome:</h2>
+                    <input type="text" name="nome" id="nome-box" class="input" required>
+                    <label for="nome-box">Seu nome completo </label>
+                </div>
+                <div class="input-single">
+                    <h2>Email:</h2>
+                    <input type="text" name="email" id="email-box" class="input" required>
+                    <label for="email-box">Seu Email </label>
+                </div>
+                <div class="input-single">
+                    <h2>Telefone:</h2>
+                    <input type="text" name="telefone" id="telefone-box" class="input" required>
+                    <script>
+                        const telefoneInput = document.getElementById('telefone-box');
+
+                        telefoneInput.addEventListener('input', (e) => {
+                            // Remove tudo que não é número
+                            let valor = e.target.value.replace(/\D/g, "");
+
+                            // Limita a quantidade máxima de caracteres para 11
+                            valor = valor.substring(0, 11);
+
+                            // Aplica a máscara dependendo da quantidade de números
+                            if (valor.length > 2) {
+                                valor = valor.replace(/^(\d{2})/, '($1) ');
+                            }
+                            if (valor.length > 7) {
+                                valor = valor.replace(/(\d{5})(\d{4})$/, '$1-$2');
+                            }
+
+                            // Atualiza o valor do input
+                            e.target.value = valor;
+                        });
+                    </script>
+                    <label for="telefone-box">Seu telefone: </label>
+                </div>
+                <div class="radios">
+                    <h2>Motivo do contato:</h2>
+                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                    <label for="assunto-box" class="texto-efeito">Quero me filiar ao partido</label><br>
+                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                    <label for="assunto-box" class="texto-efeito">Quero ser patrocinador</label><br>
+                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                    <label for="assunto-box" class="texto-efeito">Quero marcar um debate</label><br>
+                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                    <label for="assunto-box" class="texto-efeito">Quero fazer uma entrevista</label><br>
+                </div>
+                <div class="input-single">
+                    <h2>Outras informações: </h2>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder=" " required></textarea>
+                </div>
+                <div class="input-single">
+                    <button type="submit" class="input" class="BtnEnviar">Enviar</button>
+                </div>
+            </form>
+
+    </main>
+
+    <footer>
+        <div class="linhaFooter"></div>
+
+        <div class="itensFooter">
+
+            <div class="localizacao">
+
+                <div class="imagensPartido">
+                    <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+                    <img src="/Imagens/PPCsiglaBranca.png" alt="">
+                </div>
+
+                <p class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Getulio Vargas, n° 2890 - São Paulo, Brasil</p>
+            </div>
+
+            <div class="redes">
+
+                <p class="fonteTexto">Siga nossas redes:
+
+                </p>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-threads"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="politica">
+                <p class="fonteTexto">Políticas: </p>
+                <a class="fonteTexto" href="">Politica de Cookies</a>
+                <a class="fonteTexto" href="">Politica de Privacidade</a>
+            </div>
+
+        </div>
+
+        <div class="linhaFooter"></div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
