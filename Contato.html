@@ -15,14 +15,16 @@
     <!-- Fontes -->
 
     <style>
+
         h1 {
             text-transform: uppercase;
-            font-size: 40px;
             text-align: center;
-            padding-top: 150px;
+            padding-top: 160px;
             color: navy;
             font-weight: 900;
-            font-size: 50px;
+            font-size: 60px;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 0px rgba(212, 175, 55, 0.3);
         }
 
         h2 {
@@ -49,6 +51,7 @@
             background-color: navy;
             border-radius: 10px;
             padding: 20px;
+            box-shadow: 2px 4px 8px;
         }
 
         .input-single {
@@ -62,18 +65,22 @@
             bottom: 13px;
             transition: all 200ms;
             cursor: text;
+            color: white;
         }
 
         .input {
             width: 400px;
             height: 40px;
             border: 0;
+            background-color: transparent;
             border-bottom: 2px solid #ccc;
             padding: 5px;
             font-size: 17px;
             outline: none;
             margin-top: 20px;
+            color: white;
         }
+
 
         form .input-single .input:focus~label,
         form .input-single .input:valid~label {
@@ -91,18 +98,25 @@
             font-size: 16px;
             font-family: inherit;
             resize: vertical;
-            transition: all 0.3s ease;
+            transition: all 1s ease;
             outline: none;
         }
 
         .input-single textarea:focus {
-            border-color: #3b82f6;
+            border-color: gold;
             background-color: #ffffff;
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+            box-shadow: 0 0 0 1px gold;
+            transform: perspective(300px) translateZ(8px);
         }
 
         .radios {
             width: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .radios h2 {
+            margin-bottom: 15px;
         }
 
         .radios label {
@@ -157,14 +171,98 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            transition: 0.3s ease, color 0.3s ease;
         }
 
         button:hover {
             background-color: gold;
             color: navy;
+            transform: translateY(-3px);
+            box-shadow: 0px 1px 6px gold;
         }
-        
+
+        .Icone {
+            display: inline-block;
+            width: 35px;
+            /* Ajuste o tamanho conforme necessário */
+            height: 35px;
+            /* Ajuste o tamanho conforme necessário */
+            margin-left: 5px;
+            /* Espaçamento entre o texto e o ícone */
+            position: absolute;
+            /* Para posicionar o ícone corretamente */
+            bottom: 65%;
+            /* Alinha o ícone com a linha de base do texto */
+        }
+
+        .Icone img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Mantém a proporção da imagem */
+        }
+
+        @keyframes vibrar {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Quando a div pai (.input-single) CONTIVER um input focado, anime a .EmailIcon */
+        .input-single:has(.input:focus) .EmailIcon {
+            animation: vibrar 0.3s ease-in-out;
+            animation-iteration-count: 3;
+        }
+
+
+        /* --- Animação de Girar/Balançar (Telefone) --- */
+        @keyframes balancar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(15deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            75% {
+                transform: rotate(-15deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* Quando a div pai (.input-single) CONTIVER um input focado, anime a .TelefoneIcon */
+        .input-single:has(.input:focus) .TelefoneIcon {
+            animation: balancar 0.3s ease-in-out;
+            animation-iteration-count: 3;
+        }
     </style>
 
 </head>
@@ -204,17 +302,21 @@
             <form action="" class="Contato">
 
                 <div class="input-single">
-                    <h2>Nome:</h2>
+                    <h2 class="fonteTitulo">Nome:</h2>
                     <input type="text" name="nome" id="nome-box" class="input" required>
                     <label for="nome-box">Seu nome completo </label>
                 </div>
                 <div class="input-single">
-                    <h2>Email:</h2>
+                    <h2 class="fonteTitulo">Email: <div class="Icone"><img src="Imagens/EmailIcone.webp" alt="iconeEmail" class="EmailIcon">
+                        </div>
+                    </h2>
                     <input type="text" name="email" id="email-box" class="input" required>
                     <label for="email-box">Seu Email </label>
                 </div>
                 <div class="input-single">
-                    <h2>Telefone:</h2>
+                    <h2 class="fonteTitulo">Telefone: <div class="Icone"><img src="Imagens/TelefoneIcone.png" alt="iconeTelefone"
+                                class="TelefoneIcon"></div>
+                    </h2>
                     <input type="text" name="telefone" id="telefone-box" class="input" required>
                     <script>
                         const telefoneInput = document.getElementById('telefone-box');
@@ -252,11 +354,11 @@
                     <label for="assunto-box" class="texto-efeito">Quero fazer uma entrevista</label><br>
                 </div>
                 <div class="input-single">
-                    <h2>Outras informações: </h2>
+                    <h2 style="margin-bottom: 20px;">Outras informações: </h2>
                     <textarea id="mensagem" name="mensagem" rows="4" placeholder=" " required></textarea>
                 </div>
                 <div class="input-single">
-                    <button type="submit" class="input" class="BtnEnviar">Enviar</button>
+                    <button type="submit" class="BtnEnviar">Enviar</button>
                 </div>
             </form>
 
