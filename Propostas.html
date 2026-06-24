@@ -5,30 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propostas Mindinho</title>
+
+    <link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link bootstrap -->
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            padding-top: 120px;
+        }
+
+        .tituloImg {
+            background-image: url(Imagens/MinidinhoPropostas.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 90%;
+            height: 700px;
+            margin-left: 5%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 8px black;
+
+            margin-bottom: 20px;
+        }
+
+        .tituloImg .titulo h1 {
+
+            padding-top: 80px;
+            padding-left: 50px;
+            width: 40%;
+            text-transform: uppercase;
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 1;
+            color: gold;
+            text-shadow: 0px 0px 5px black;
+        }
+
+        .tituloImg .titulo .linha {
+            margin-left: 55px;
+            margin-top: 330px;
+            width: 40%;
+            height: 1px;
+            background-color: rgba(211, 211, 211, 0.418);
+        }
+
+        .proposta {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            height: 340px;
+
+        }
+
+        .proposta .imgAntes img,
+        .proposta .imgDepois img {
+            margin-top: 25px;
+            width: 100%;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .proposta .texto {
+            width: 35%;
+            margin-top: 30px;
+
+        }
+
+        .proposta .texto p {
+            width: 100%;
+            text-indent: 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .proposta .texto h3 {
+            text-transform: uppercase;
+            text-align: center;
+            color: navy;
+
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgb(37, 48, 84);
+        }
+
+        .proposta .texto .linha {
+
+            margin-top: 30px;
+            width: 100%;
+            height: 1px;
+            background-color: navy;
+        }
+
+        .mindinhoFiscaliza {
+            width: 100%;
+            height: 410px;
+
+            background-color: gold;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .conteudoFiscaliza {
+            width: 90%;
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        .mindinhoFiscaliza .conteudoFiscaliza .imgFiscaliza {
+            width: 50%;
+            height: 410px;
+        }
+
+        .mindinhoFiscaliza .conteudoFiscaliza .imgFiscaliza img {
+            height: 411px;
+        }
+
+        .mindinhoFiscaliza .conteudoFiscaliza .texto {
+            width: 50%;
+        }
+
+        .mindinhoFiscaliza .conteudoFiscaliza .texto p {
+            width: 100%;
+            text-indent: 20px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .mindinhoFiscaliza .conteudoFiscaliza .texto h3 {
+            text-transform: uppercase;
+            text-align: center;
+            color: navy;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 40px;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgb(37, 48, 84);
+        }
+
+        .ultima {
+            margin-bottom: 50px;
+        }
+    </style>
+
 </head>
-
-<link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<!-- link bootstrap -->
-
-<!-- Fontes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
-
-<style>
-
-</style>
 
 <body>
 
     <header>
         <div class="imagensPartido">
-            <img class="imgPartido1" src="Imagens/iconPPCbranco.png" alt="iconePPC">
-            <img src="Imagens/PPCsiglaBranca.png" alt="">
+            <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+            <img src="/Imagens/PPCsiglaBranca.png" alt="">
         </div>
 
         <div class="menu">
@@ -46,10 +189,167 @@
     </header>
 
     <main>
-        
+        <div class="tituloImg">
+            <div class="titulo">
+                <h1 class="fonteTitulo">Propostas do Mindinho</h1>
+            </div>
+
+            <div class="linha"></div>
+
+        </div>
+
+        <div class="proposta">
+            <div class="imgAntes">
+                <img src="Imagens/CalçadaAntes.png" alt="">
+            </div>
+
+            <div class="imgDepois">
+                <img src="Imagens/CalçadaDepois.png" alt="">
+            </div>
+
+            <div class="texto">
+                <h3 class="fonteTitulo">
+                    Proibição de Calçadas com "Efeito Montanha-Russa"
+                </h3>
+                <p class="fonteTexto">
+                    Multar severamente o proprietário que deixar a calçada com ondulações que façam uma pessoa com
+                    pernas curtas parecer que está escalando o Everest para ir à padaria.
+                </p>
+
+                <div class="linha"></div>
+            </div>
+
+        </div>
+
+        <div class="proposta">
+
+            <div class="texto">
+                <h3 class="fonteTitulo">
+                    Lei do Banheiro Sem Salto Mortal
+                </h3>
+                <p class="fonteTexto">
+                    Fim dos vasos sanitários "padrão trono de rei" em prédios públicos. Banheiros onde a pessoa precisa
+                    de impulso para subir ou onde as pernas ficam balançando no vácuo são um descaso e devem ser
+                    adaptados para não serem multados.
+                </p>
+
+                <div class="linha"></div>
+            </div>
+
+            <div class="imgAntes">
+                <img src="Imagens/BanheiroAntes.png" alt="">
+            </div>
+
+            <div class="imgDepois">
+                <img src="Imagens/BanheiroDepois.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="mindinhoFiscaliza">
+            <div class="conteudoFiscaliza">
+
+                <div class="imgFiscaliza">
+                    <img src="Imagens/FiscalizaMindinho.png" alt="">
+                </div>
+                <div class="texto">
+
+                    <h3 class="fonteTitulo">
+                        Mindinho Fiscaliza
+                    </h3>
+
+                    <p class="fonteTexto">
+                        O próprio mindinho usará sua vivência para fazer uma websérie nas redes sociais e jornais
+                        testando a
+                        acessibilidade da cidade, tanto para pessoas com nanismo, quanto para pessoas com outras
+                        deficiências Físicas, convidando participações especiais para o programa. Se o vereador não
+                        alcança
+                        ou não passa, a prefeitura vai ser notificada, e o orgão ou empresa levará uma multa mensal até
+                        o
+                        problema ser resolvido!
+                    </p>
+
+                    <p class="fonteTexto">
+                        Essa campanha tem o intuito de motivas empresas e corporações a adaptarem suas contruções para que todas as pessoas consigam acessa-las e usufrui-las da melhor maneira. Mindinho fiscalizará tudo para que nenhuma pessoa passe por constrangimento em público, e garantirá para todos um ambiente acolhedor e sem perrengues por toda cidade!
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="proposta">
+            <div class="imgAntes">
+                <img src="Imagens/BancoAntes.png" alt="">
+            </div>
+
+            <div class="imgDepois">
+                <img src="Imagens/BancoDepois.png" alt="">
+            </div>
+
+            <div class="texto">
+                <h3 class="fonteTitulo">
+                     Balcões Sem Humilhação
+                </h3>
+                <p class="fonteTexto">
+                    Proibir que órgãos públicos tenham balcões de atendimento tão altos que o atendente precise se levantar e debruçar para ver se tem alguém do outro lado. O atendimento deve ser olho no olho, não "olho no topo da cabeça". 
+                </p>
+
+                <div class="linha"></div>
+            </div>
+
+        </div>
+
+        <div class="proposta">
+
+            <div class="texto">
+                <h3 class="fonteTitulo">
+                    Kit Sobrevivência no Supermercado
+                </h3>
+                <p class="fonteTexto">
+                    Exigir que os supermercados disponibilizem "pinças gigantes" para que qualquer um consiga pegar o produto da última prateleira sem precisar escalar as gôndolas como se fosse o Homem-Aranha, e carrinhos adaptados a para pessoas com deficiências, inclusive nanismo.
+                </p>
+
+                <div class="linha"></div>
+            </div>
+
+            <div class="imgAntes">
+                <img src="Imagens/MercadoAntes.png" alt="">
+            </div>
+
+            <div class="imgDepois">
+                <img src="Imagens/MercadoDepois.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="proposta ultima">
+            <div class="imgAntes">
+                <img src="Imagens/ShowAntes.png" alt="">
+            </div>
+
+            <div class="imgDepois">
+                <img src="Imagens/ShowDepois.png" alt="">
+            </div>
+
+            <div class="texto">
+                <h3 class="fonteTitulo">
+                     "Corta-Fila" por Direito de Vista
+                </h3>
+                <p class="fonteTexto">
+                   Em shows e eventos públicos na cidade, pessoas com nanismo ou cadeirantes terão direito à primeira fileira da pista. Assistir ao show inteiro olhando para as costas ou para a bunda do vizinho é imperdoável. 
+                </p>
+
+                <div class="linha"></div>
+            </div>
+
+        </div>
+
+
     </main>
-    <!-- 
-     <footer>
+
+    <footer>
         <div class="linhaFooter"></div>
 
         <div class="itensFooter">
@@ -57,8 +357,8 @@
             <div class="localizacao">
 
                 <div class="imagensPartido">
-                    <img class="imgPartido1" src="Imagens/iconPPCbranco.png" alt="iconePPC">
-                    <img src="Imagens/PPCsiglaBranca.png" alt="">
+                    <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+                    <img src="/Imagens/PPCsiglaBranca.png" alt="">
                 </div>
 
                 <p class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Getulio Vargas, n° 2890 - São Paulo, Brasil</p>
@@ -85,7 +385,7 @@
         </div>
 
         <div class="linhaFooter"></div>
-    </footer> -->
+    </footer>
 
 </body>
 
