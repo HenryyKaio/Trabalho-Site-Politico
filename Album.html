@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Campanha</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propostas Mindinho</title>
+
+    <link rel="icon" type="image/x-icon" href="Imagens/iconPPC.png"> <!-- icone da pagina -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link bootstrap -->
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+
+            padding-top: 120px;
+        }
+
+        .titulo {
+
+            border-top: solid 3px navy;
+            border-bottom: solid 3px navy;
+            width: 100%;
+            height: 150px;
+            background-color: gold;
+            text-align: center;
+
+        }
+
+        .titulo h1 {
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 50px;
+            color: navy;
+            text-shadow: 2px 2px 5px goldenrod;
+        }
+
+        .subtituloMenu {
+            width: 90%;
+            height: 90px;
+            margin-left: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .subtituloMenu a {
+            text-decoration: none;
+            color: gold;
+            font-weight: 900;
+            text-transform: uppercase;
+            background-color: navy;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 17px;
+            box-shadow: 0px 0px 2px black;
+
+            transition: all 0.3s ease;
+        }
+
+        .subtituloMenu a:hover {
+            background-color: gold;
+            color: navy;
+
+        }
+
+        .subtituloMenu .linhaSubMenu {
+
+            width: 28%;
+            height: 4px;
+            background-color: navy;
+        }
+
+        .linha {
+            width: 90%;
+            height: 450px;
+            margin-bottom: 50px;
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-between;
+            scroll-margin-top: 120px;
+        }
+
+        .linha .foto {
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px gray;
+            width: 32%;
+            height: 450px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .linha .foto:hover {
+            transform: translateY(-5px);
+        }
+
+        .linha .foto img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            height: 300px;
+            border-bottom: solid 4px navy;
+        }
+
+        .linha .foto h3 {
+            text-align: center;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: navy;
+            text-shadow: 0px 0px 1px;
+        }
+
+        .linha .foto p {
+            width: 90%;
+            margin-left: 5%;
+            text-indent: 20px;
+            font-size: 17px;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .linha .foto .frente {
+
+            position: absolute;
+            top: 15px;
+            left: 10px;
+
+            h4 {
+                color: navy;
+                font-weight: 800;
+                text-transform: uppercase;
+                background-color: gold;
+                padding: 0px 10px;
+                border-radius: 50px;
+                font-size: 15px;
+                box-shadow: 0px 0px 2px black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="imagensPartido">
+            <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+            <img src="/Imagens/PPCsiglaBranca.png" alt="">
+        </div>
+
+        <div class="menu">
+            <ul class="menuLista fonteTitulo">
+                <li><a href="index.html" class="NavLinks">Pagina Inicial</a></li>
+                <li><a href="Historia.html" class="NavLinks">História</a></li>
+                <li><a href="Propostas.html" class="NavLinks">Propostas</a></li>
+                <li><a href="#" class="NavLinks">Album de Campanha</a></li>
+                <li><a href="Agenda.html" class="NavLinks">Agenda</a></li>
+                <li><a href="Jingle.html" class="NavLinks">Jingle</a></li>
+                <li><a href="Contato.html" class="NavLinks">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="titulo">
+            <h1 class="fonteTitulo">Álbum de Campanha do Mindinho <i class="bi bi-camera"></i></h1>
+            <h2 class="fonteTitulo">Acompanhe o dia a dia, as fiscalizações e a irreverência do candidato que vê Manuel
+                Ribas por outro ângulo.</h2>
+        </div>
+
+        <div class="subtituloMenu fonteTitulo">
+            <div class="linhaSubMenu"></div>
+            <a href="#campanha">Campanhas</a>
+            <a href="#fiscalizacao">Fiscalização</a>
+            <a href="#diaDia">Dia a Dia</a>
+            <div class="linhaSubMenu"></div>
+        </div>
+
+        <div class="linha" id="campanha">
+            <div class="foto">
+                <div class="frente">
+                    <h4 class="fonteTitulo">Campanha</p>
+                </div>
+
+                <img src="Imagens/Debate.png" alt="">
+                <h3 class="fonteTitulo">Debate: Infraestrutura da Cidade</h3>
+                <p class="fonteTexto">Debate com outros candidatos sobre a infraestrutura de Manuel Ribas. Quem será que
+                    tem mais capacidade para resolver os problemas atuais?</p>
+            </div>
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Campanha</p>
+                </div>
+
+                <img src="Imagens/CampanhaNaRua.png" alt="">
+                <h3 class="fonteTitulo">Campanha de rua com Apoiadores</h3>
+                <p class="fonteTexto">Mindinho participando buscando mais apoiadores, realiza campanha de rua com seus
+                    atuias eleitores.</p>
+            </div>
+            <div class="foto">
+                <div class="frente">
+                    <h4 class="fonteTitulo">Campanha</p>
+                </div>
+
+                <img src="Imagens/CampanhaAcessiblidade.png" alt="">
+                <h3 class="fonteTitulo">Palestra: Acessebilidade para PCD's</h3>
+                <p class="fonteTexto">Palestra pública realizada para concientizar sobre a necessidade de aessibilidade
+                    para pessoas com deficiencias fisícas dentro de espaços públicos e privados.</p>
+            </div>
+        </div>
+
+         <div class="linha" id="fiscalizacao">
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Fiscalização</p>
+                </div>
+
+                <img src="Imagens/MindinhoCaixaEletronico.png" alt="">
+                <h3 class="fonteTitulo">Caixas Eletrônicos sem adaptação</h3>
+                <p class="fonteTexto">Os caixas eletrônicos funcionam com sistema touch, mas quem não o exerga fica
+                    difícil de conseguir fazer saques sem passar por uma humilhação.</p>
+            </div>
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Fiscalização</p>
+                </div>
+
+                <img src="Imagens/MindinhoOnibus.png" alt="">
+                <h3 class="fonteTitulo">Degraus para o Monte Everest</h3>
+                <p class="fonteTexto">Até pegar um transporte público é complicado quando os degraus para entrar no
+                    veiculo são do tamanho de uma montanha para uma pessoa com nanismo.</p>
+            </div>
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Fiscalização</p>
+                </div>
+
+                <img src="Imagens/MindinhoRestaurante.png" alt="">
+                <h3 class="fonteTitulo">Restaurantes para gigantes</h3>
+                <p class="fonteTexto">Restaurantes e Cafeterias possuem mesas apenas para adultos de tamanho normal, e
+                    mesas pequenas apenas em areas infantis.</p>
+            </div>
+        </div>
+
+         <div class="linha" id="diaDia">
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Dia a dia</p>
+                </div>
+
+                <img src="Imagens/MindinhoPadaria.png" alt="">
+                <h3 class="fonteTitulo">Conhecendo o Povo</h3>
+                <p class="fonteTexto">Mindinho passeia pelas cidades, conhecendo os cidadãos e divulgando sua candidatura. Conhecer seu público é a melhor forma de entende-los.</p>
+            </div>
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Dia a dia</p>
+                </div>
+
+                <img src="Imagens/MindinhoMoradores.png" alt="">
+                <h3 class="fonteTitulo">Capturando relatos de vivências</h3>
+                <p class="fonteTexto">Realização de reuniões com moradores de diversos bairros para ouvir reclamações e propostas. Mindinho quer que todos sejam acolhidos e representados.</p>
+            </div>
+            <div class="foto">
+
+                <div class="frente">
+                    <h4 class="fonteTitulo">Dia a dia</p>
+                </div>
+
+                <img src="Imagens/MindinhoJogoBasquete.png" alt="">
+                <h3 class="fonteTitulo">Visitação de Comunidades</h3>
+                <p class="fonteTexto">Visitas em comunidades e associações importantes para cidade, conhecendo suas causas e apoiando-as cada vez mais!</p>
+            </div>
+        </div>
+ 
+    </main>
+
+    <footer>
+        <div class="linhaFooter"></div>
+
+        <div class="itensFooter">
+
+            <div class="localizacao">
+
+                <div class="imagensPartido">
+                    <img class="imgPartido1" src="/Imagens/iconPPCbranco.png" alt="iconePPC">
+                    <img src="/Imagens/PPCsiglaBranca.png" alt="">
+                </div>
+
+                <p class="fonteTexto"><i class="bi bi-geo-alt"></i> Rua Getulio Vargas, n° 2890 - São Paulo, Brasil</p>
+            </div>
+
+            <div class="redes">
+
+                <p class="fonteTexto">Siga nossas redes:
+
+                </p>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-threads"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="politica">
+                <p class="fonteTexto">Políticas: </p>
+                <a class="fonteTexto" href="">Politica de Cookies</a>
+                <a class="fonteTexto" href="">Politica de Privacidade</a>
+            </div>
+
+        </div>
+
+        <div class="linhaFooter"></div>
+    </footer>
+</body>
+
+</html>
