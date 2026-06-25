@@ -15,7 +15,6 @@
     <!-- Fontes -->
 
     <style>
-
         h1 {
             text-transform: uppercase;
             text-align: center;
@@ -29,6 +28,7 @@
 
         h2 {
             color: rgb(255, 255, 255);
+            font-family: "Paytone One" sans-serif;
         }
 
         main {
@@ -39,10 +39,13 @@
             margin-top: 50px;
             margin-bottom: 150px;
             border-radius: 20px;
+            display: flex;
+            gap: calc(100% - 450px - 450px - 5%);
+            padding-left: 5%;
         }
 
         .Contato {
-            width: 500px;
+            width: 450px;
             margin: 20px auto;
             display: flex;
             flex-direction: column;
@@ -52,6 +55,67 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 2px 4px 8px;
+        }
+
+        .Anuncios {
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .Anuncios h2{
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: navy;
+        }
+
+
+
+        .ContainerAnuncio span {
+            font-size: 28px;
+            background-color: navy;
+            padding: 5px 15px;
+            border: 1px solid black;
+            border-radius: 0px 12px 12px 0px;
+            position: relative;
+            bottom: 40px;
+            transition: 555ms all ease;
+            color: white;
+
+        }
+
+        .ContainerAnuncio span:hover {
+            background-color: rgb(5, 205, 199);
+            border-color: rgb(5, 205, 199);
+            box-shadow: 0px 1px 2px rgb(5, 205, 199);
+        }
+
+        .ContainerAnuncio a {
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+
+
+        .Anuncios img {
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            transition: 555ms all ease;
+            box-shadow: 0px 2px 8px black;
+        }
+
+        .ContainerAnuncio {
+            transition: 555ms all ease;
+        }
+
+        .ContainerAnuncio:hover {
+            transform: perspective(300px) translateZ(8px);
         }
 
         .input-single {
@@ -209,19 +273,19 @@
             }
 
             20% {
-                transform: translate(-2px, 2px);
+                transform: translate(-1px, 1px);
             }
 
             40% {
-                transform: translate(-2px, -2px);
+                transform: translate(-1px, -1px);
             }
 
             60% {
-                transform: translate(2px, 2px);
+                transform: translate(1px, 1px);
             }
 
             80% {
-                transform: translate(2px, -2px);
+                transform: translate(1px, -1px);
             }
 
             100% {
@@ -308,15 +372,16 @@
                     <label for="nome-box">Seu nome completo </label>
                 </div>
                 <div class="input-single">
-                    <h2 class="fonteTitulo">Email: <div class="Icone"><img src="Imagens/EmailIcone.webp" alt="iconeEmail" class="EmailIcon">
+                    <h2 class="fonteTitulo">Email <div class="Icone"><img src="Imagens/EmailIcone.webp" alt="iconeEmail"
+                                class="EmailIcon">
                         </div>
                     </h2>
                     <input type="text" name="email" id="email-box" class="input" required>
                     <label for="email-box">Seu Email </label>
                 </div>
                 <div class="input-single">
-                    <h2 class="fonteTitulo">Telefone: <div class="Icone"><img src="Imagens/TelefoneIcone.png" alt="iconeTelefone"
-                                class="TelefoneIcon"></div>
+                    <h2 class="fonteTitulo">Telefone <div class="Icone"><img src="Imagens/TelefoneIcone.png"
+                                alt="iconeTelefone" class="TelefoneIcon"></div>
                     </h2>
                     <input type="text" name="telefone" id="telefone-box" class="input" required>
                     <script>
@@ -341,7 +406,7 @@
                             e.target.value = valor;
                         });
                     </script>
-                    <label for="telefone-box">Seu telefone: </label>
+                    <label for="telefone-box">Seu telefone </label>
                 </div>
                 <div class="radios">
                     <h2 class="fonteTitulo">Motivo do contato:</h2>
@@ -362,6 +427,23 @@
                     <button type="submit" class="BtnEnviar">Enviar</button>
                 </div>
             </form>
+        </section>
+
+        <div class="Anuncios">
+
+            <h2 class="fonteTitulo">Você pode gostar de:</h2>
+            <div class="ContainerAnuncio">
+                <img src="Imagens/BannerAnuncio.png" alt="">
+                <a href=""><span>Compre aqui!</span></a>
+            </div>
+            <div class="ContainerAnuncio"><img src="Imagens/BolsaAnuncio.png" alt="">
+                <a href=""><span>Compre aqui!</span></a>
+            </div>
+            <div class="ContainerAnuncio"><img src="Imagens/CamisetaAnuncio.png" alt="">
+                <a href=""><span>Compre aqui!</span></a>
+            </div>
+        </div>
+
 
     </main>
 
