@@ -197,7 +197,7 @@
     </header>
 
     <main>
-        
+
          <section class="titulo">
         <h1 class="fonteTitulo">Ouça o Jingle oficial do Mindinho!</h1>
          </section>
@@ -212,21 +212,21 @@
                 <div class="disco">
                     <div class="centroDisco"></div>
                     <script>
-                        // Seleciona o elemento de áudio e a div do disco
+                       
                         const audio = document.querySelector('.Musica audio');
                         const disco = document.querySelector('.disco');
 
-                        // Quando o áudio começar a tocar, adiciona a classe 'tocando'
+                       
                         audio.addEventListener('play', () => {
                             disco.classList.add('tocando');
                         });
 
-                        // Quando o áudio for pausado, remove a classe 'tocando'
+                        
                         audio.addEventListener('pause', () => {
                             disco.classList.remove('tocando');
                         });
 
-                        // Opcional: Garante que pare de girar quando a música acabar
+                        
                         audio.addEventListener('ended', () => {
                             disco.classList.remove('tocando');
                         });
