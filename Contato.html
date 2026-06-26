@@ -220,24 +220,17 @@
             font-size: 20px;
             font-weight: 600;
             display: inline-block;
-            /* Garante que o fundo tenha exatamente o tamanho do texto */
-
-            /* 1. Criamos um gradiente com o dobro do tamanho do texto */
-            /* Metade esquerda é a cor inicial (cinza), metade direita é a cor final (azul) */
+           
             background: linear-gradient(to right, white 50%, gold 50%);
             background-size: 200% 100%;
-
-            /* 2. Posicionamos o fundo totalmente para a direita (mostrando a cor inicial) */
+ 
             background-position: 0%;
-
-            /* 3. O TRUQUE: Faz o fundo ficar apenas "dentro" do formato das letras */
             -webkit-background-clip: text;
+
             background-clip: text;
 
-            /* 4. Torna o texto original transparente para que o fundo apareça */
             -webkit-text-fill-color: transparent;
 
-            /* Configura a transição suave do movimento do fundo */
             transition: background-position 0.3s ease-in-out;
         }
 
@@ -307,14 +300,14 @@
             }
         }
 
-        /* Quando a div pai (.input-single) CONTIVER um input focado, anime a .EmailIcon */
+        
         .input-single:has(.input:focus) .EmailIcon {
             animation: vibrar 0.3s ease-in-out;
             animation-iteration-count: 3;
         }
 
 
-        /* --- Animação de Girar/Balançar (Telefone) --- */
+       
         @keyframes balancar {
             0% {
                 transform: rotate(0deg);
@@ -337,7 +330,7 @@
             }
         }
 
-        /* Quando a div pai (.input-single) CONTIVER um input focado, anime a .TelefoneIcon */
+       
         .input-single:has(.input:focus) .TelefoneIcon {
             animation: balancar 0.3s ease-in-out;
             animation-iteration-count: 3;
@@ -402,13 +395,13 @@
                             const telefoneInput = document.getElementById('telefone-box');
 
                             telefoneInput.addEventListener('input', (e) => {
-                                // Remove tudo que não é número
+                                
                                 let valor = e.target.value.replace(/\D/g, "");
 
-                                // Limita a quantidade máxima de caracteres para 11
+                                
                                 valor = valor.substring(0, 11);
 
-                                // Aplica a máscara dependendo da quantidade de números
+                                
                                 if (valor.length > 2) {
                                     valor = valor.replace(/^(\d{2})/, '($1) ');
                                 }
@@ -416,7 +409,7 @@
                                     valor = valor.replace(/(\d{5})(\d{4})$/, '$1-$2');
                                 }
 
-                                // Atualiza o valor do input
+                                
                                 e.target.value = valor;
                             });
                         </script>
