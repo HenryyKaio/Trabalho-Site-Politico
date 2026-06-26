@@ -19,19 +19,29 @@
 
     <style>
 
-        h1{
-            color:navy;
+        main {
+            padding-top: 120px;
+        }
+        
+        .titulo {
+            
+            border-top: solid 3px gold;
+            border-bottom: solid 3px gold;
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+            text-align: center;
+            margin-bottom: 30px;
+
         }
 
-        
-
-        .Titulo h1{
-            font-size: 40px;
-            text-align: center;
-            padding-top: 150px;
-            color: navy;
+        .titulo h1 {
+            margin-top: 10px;
+            text-transform: uppercase;
             font-weight: 900;
             font-size: 50px;
+            color: gold;
+            text-shadow: 2px 2px 5px rgb(0, 0, 91);
         }
 
         .disco {
@@ -48,26 +58,28 @@
             animation-play-state: running;
         }
 
-        main {
+        .conteudo {
             display: flex;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: flex-start; 
-            gap: 40px; 
-            width: 90%;
-            max-width: 1200px;
-            margin: 50px auto 100px auto;
+            align-items: flex-start;
+            gap: 40px;
+            width: 80%;
+
+            margin-left: 10%;
+            margin-bottom: 50px;
             background-color: gold;
+          box-shadow: 0px 0px 5px gray;
             border-radius: 20px;
             padding: 40px;
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
 
         .containerMusica {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px; 
+            gap: 30px;
             flex: 1;
             min-width: 320px;
         }
@@ -86,7 +98,7 @@
             animation: pulsar 6s linear infinite;
         }
 
-        .Musica audio{
+        .Musica audio {
             width: 100%;
             max-width: 400px;
         }
@@ -107,10 +119,10 @@
             width: 90%;
             height: 300px;
             object-fit: cover;
-            border: 2px solid black;
+            
         }
 
-        .imagem2{
+        .imagem2 {
             margin-top: 25px;
         }
 
@@ -128,7 +140,7 @@
             font-size: 23px;
             line-height: 1.5;
             text-align: center;
-            margin-bottom: 40px; 
+            margin-bottom: 20px;
             margin-top: 20px;
         }
 
@@ -143,20 +155,21 @@
                 transform: rotate(360deg);
             }
         }
-        
+
         @keyframes pulsar {
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.02);
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
             }
+
             100% {
                 transform: scale(1);
             }
         }
-        
     </style>
 
 </head>
@@ -183,55 +196,57 @@
 
     </header>
 
-    <section class="Titulo">
-        <h1 class="fonteTitulo">Ouça o Jingle oficial do Mindinho!</h1>
-    </section>
-
     <main>
-        <div class="containerMusica">
-        <div class="Musica">
-            <audio controls>
-                <source src="Mindinho 14.mp3" type="audio/mpeg">
-                Seu navegador não suporta este elemento de áudio.
-            </audio>
-            <div class="disco">
-                <div class="centroDisco"></div>
-                <script>
-                    // Seleciona o elemento de áudio e a div do disco
-                    const audio = document.querySelector('.Musica audio');
-                    const disco = document.querySelector('.disco');
+        
+         <section class="titulo">
+        <h1 class="fonteTitulo">Ouça o Jingle oficial do Mindinho!</h1>
+         </section>
 
-                    // Quando o áudio começar a tocar, adiciona a classe 'tocando'
-                    audio.addEventListener('play', () => {
-                        disco.classList.add('tocando');
-                    });
+        <div class="conteudo">
+             <div class="containerMusica">
+            <div class="Musica">
+                <audio controls>
+                    <source src="Mindinho 14.mp3" type="audio/mpeg">
+                    Seu navegador não suporta este elemento de áudio.
+                </audio>
+                <div class="disco">
+                    <div class="centroDisco"></div>
+                    <script>
+                        // Seleciona o elemento de áudio e a div do disco
+                        const audio = document.querySelector('.Musica audio');
+                        const disco = document.querySelector('.disco');
 
-                    // Quando o áudio for pausado, remove a classe 'tocando'
-                    audio.addEventListener('pause', () => {
-                        disco.classList.remove('tocando');
-                    });
+                        // Quando o áudio começar a tocar, adiciona a classe 'tocando'
+                        audio.addEventListener('play', () => {
+                            disco.classList.add('tocando');
+                        });
 
-                    // Opcional: Garante que pare de girar quando a música acabar
-                    audio.addEventListener('ended', () => {
-                        disco.classList.remove('tocando');
-                    });
-                </script>
+                        // Quando o áudio for pausado, remove a classe 'tocando'
+                        audio.addEventListener('pause', () => {
+                            disco.classList.remove('tocando');
+                        });
+
+                        // Opcional: Garante que pare de girar quando a música acabar
+                        audio.addEventListener('ended', () => {
+                            disco.classList.remove('tocando');
+                        });
+                    </script>
+                </div>
             </div>
-        </div>
 
-        <div class="imagem">
-            <img src="Imagens/CidadeJingle.png" alt="Imagem ilustrativa do jingle">    
-        </div>
+            <div class="imagem">
+                <img src="Imagens/CidadeJingle.png" alt="Imagem ilustrativa do jingle">
+            </div>
 
-        <div class="imagem imagem2">
-            <img src="Imagens/MindinhoCantando.png" alt="Imagem ilustrativa do jingle">    
-        </div>
+            <div class="imagem imagem2">
+                <img src="Imagens/MindinhoCantando.png" alt="Imagem ilustrativa do jingle">
+            </div>
 
         </div>
 
 
         <div class="Letra">
-            <h1 class="fonteTitulo" style="text-align: center;">Cante conosco!</h1>
+            <h1 class="fonteTitulo" style="text-align: center; text-transform: uppercase; font-weight: 800;">Cante conosco!</h1>
             <p class="fonteTexto">
                 Chegou a hora, o povo já chamou<br>
                 A força do trabalho na cidade começou<br>
@@ -267,9 +282,11 @@
             </p>
         </div>
 
+        </div>
+       
     </main>
 
-     <footer>  
+    <footer>
         <div class="linhaFooter"></div>
 
         <div class="itensFooter">
@@ -286,7 +303,7 @@
 
             <div class="redes">
 
-                <p class="fonteTexto">Siga nossas redes: 
+                <p class="fonteTexto">Siga nossas redes:
 
                 </p>
                 <a href=""><i class="bi bi-whatsapp"></i></a>
@@ -304,8 +321,8 @@
 
         </div>
 
-         <div class="linhaFooter"></div>
-    </footer> 
+        <div class="linhaFooter"></div>
+    </footer>
 
 
 </body>
