@@ -15,16 +15,31 @@
     <!-- Fontes -->
 
     <style>
-        h1 {
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 160px;
-            text-align: center;
-            padding-top: 150px;
-            color: navy;
-            font-weight: 900;
-            font-size: 60px;
+        main {
+            padding-top: 120px;
         }
+
+        .titulo {
+
+            border-top: solid 3px gold;
+            border-bottom: solid 3px gold;
+            width: 100%;
+            height: 100px;
+            background-color: navy;
+            text-align: center;
+           
+
+        }
+
+        .titulo h1 {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 50px;
+            color: gold;
+            text-shadow: 2px 2px 5px rgb(0, 0, 91);
+        }
+
 
         h2 {
             color: rgb(255, 255, 255);
@@ -32,14 +47,15 @@
             font-size: 30px;
         }
 
-        main {
+        .conteudo {
             width: 100%;
             margin: 0 auto;
             background-color: gold;
             padding: 50px 0;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            border: 2px solid black;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            border-top: solid 3px navy;
+            border-bottom: solid 3px navy;
             display: flex;
             gap: calc(100% - 450px - 800px - 5%);
             padding-left: 5%;
@@ -47,7 +63,7 @@
 
         .Contato {
             width: 800px;
-            margin: 20px auto;
+            margin: 10px auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -66,11 +82,12 @@
             gap: 20px;
         }
 
-        .Anuncios h2{
-            font-size: 34px;
+        .Anuncios h2 {
+            font-size: 30px;
             margin-bottom: 10px;
             color: navy;
             font-weight: 900;
+            text-transform: uppercase;
         }
 
 
@@ -255,7 +272,7 @@
             margin-left: 5px;
             position: absolute;
             bottom: 70%;
-  
+
         }
 
         .Icone img {
@@ -352,93 +369,95 @@
     </header>
 
 
-    <section>
-        <h1 class="fonteTitulo">Entre em Contato com o Mindinho!!</h1>
-    </section>
 
     <main>
 
+        <div class="titulo">
+            <h1 class="fonteTitulo">Entre em Contato com o Mindinho</h1>
+        </div>
 
+        <div class="conteudo">
+            <section class="formularioContato">
+                <form action="" class="Contato">
 
-        <section class="formularioContato">
-            <form action="" class="Contato">
+                    <div class="input-single">
+                        <h2 class="fonteTitulo">Nome:</h2>
+                        <input type="text" name="nome" id="nome-box" class="input" required>
+                        <label class="fonteTexto" for="nome-box">Seu nome completo </label>
+                    </div>
+                    <div class="input-single">
+                        <h2 class="fonteTitulo">Email <div class="Icone"><img src="Imagens/EmailIcone.webp"
+                                    alt="iconeEmail" class="EmailIcon">
+                            </div>
+                        </h2>
+                        <input type="text" name="email" id="email-box" class="input" required>
+                        <label  class="fonteTexto" for="email-box">Seu Email </label>
+                    </div>
+                    <div class="input-single">
+                        <h2 class="fonteTitulo">Telefone <div class="Icone"><img src="Imagens/TelefoneIcone.png"
+                                    alt="iconeTelefone" class="TelefoneIcon"></div>
+                        </h2>
+                        <input type="text" name="telefone" id="telefone-box" class="input" required>
+                        <script>
+                            const telefoneInput = document.getElementById('telefone-box');
 
-                <div class="input-single">
-                    <h2 class="fonteTitulo">Nome:</h2>
-                    <input type="text" name="nome" id="nome-box" class="input" required>
-                    <label for="nome-box">Seu nome completo </label>
+                            telefoneInput.addEventListener('input', (e) => {
+                                // Remove tudo que não é número
+                                let valor = e.target.value.replace(/\D/g, "");
+
+                                // Limita a quantidade máxima de caracteres para 11
+                                valor = valor.substring(0, 11);
+
+                                // Aplica a máscara dependendo da quantidade de números
+                                if (valor.length > 2) {
+                                    valor = valor.replace(/^(\d{2})/, '($1) ');
+                                }
+                                if (valor.length > 7) {
+                                    valor = valor.replace(/(\d{5})(\d{4})$/, '$1-$2');
+                                }
+
+                                // Atualiza o valor do input
+                                e.target.value = valor;
+                            });
+                        </script>
+                        <label  class="fonteTexto" for="telefone-box">Seu telefone </label>
+                    </div>
+                    <div class="radios">
+                        <h2 class="fonteTitulo">Motivo do contato:</h2>
+                        <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                        <label for="assunto-box" class="texto-efeito">Quero me filiar ao partido</label><br>
+                        <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                        <label for="assunto-box" class="texto-efeito">Quero ser patrocinador</label><br>
+                        <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                        <label for="assunto-box" class="texto-efeito">Quero marcar um debate</label><br>
+                        <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
+                        <label for="assunto-box" class="texto-efeito">Quero fazer uma entrevista</label><br>
+                    </div>
+                    <div class="input-single">
+                        <h2 style="margin-bottom: 20px;" class="fonteTitulo">Outras informações: </h2>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder=" " required></textarea>
+                    </div>
+                    <div class="input-single">
+                        <button type="submit" class="BtnEnviar">Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+            <div class="Anuncios">
+
+                <h2 class="fonteTitulo">Você pode gostar de:</h2>
+                <div class="ContainerAnuncio">
+                    <img src="Imagens/BannerAnuncio.png" alt="">
+                    <a href=""><span>Compre aqui!</span></a>
                 </div>
-                <div class="input-single">
-                    <h2 class="fonteTitulo">Email <div class="Icone"><img src="Imagens/EmailIcone.webp" alt="iconeEmail"
-                                class="EmailIcon">
-                        </div>
-                    </h2>
-                    <input type="text" name="email" id="email-box" class="input" required>
-                    <label for="email-box">Seu Email </label>
+                <div class="ContainerAnuncio"><img src="Imagens/BolsaAnuncio.png" alt="">
+                    <a href=""><span>Compre aqui!</span></a>
                 </div>
-                <div class="input-single">
-                    <h2 class="fonteTitulo">Telefone <div class="Icone"><img src="Imagens/TelefoneIcone.png"
-                                alt="iconeTelefone" class="TelefoneIcon"></div>
-                    </h2>
-                    <input type="text" name="telefone" id="telefone-box" class="input" required>
-                    <script>
-                        const telefoneInput = document.getElementById('telefone-box');
-
-                        telefoneInput.addEventListener('input', (e) => {
-                            // Remove tudo que não é número
-                            let valor = e.target.value.replace(/\D/g, "");
-
-                            // Limita a quantidade máxima de caracteres para 11
-                            valor = valor.substring(0, 11);
-
-                            // Aplica a máscara dependendo da quantidade de números
-                            if (valor.length > 2) {
-                                valor = valor.replace(/^(\d{2})/, '($1) ');
-                            }
-                            if (valor.length > 7) {
-                                valor = valor.replace(/(\d{5})(\d{4})$/, '$1-$2');
-                            }
-
-                            // Atualiza o valor do input
-                            e.target.value = valor;
-                        });
-                    </script>
-                    <label for="telefone-box">Seu telefone </label>
+                <div class="ContainerAnuncio"><img src="Imagens/CamisetaAnuncio.png" alt="">
+                    <a href=""><span>Compre aqui!</span></a>
                 </div>
-                <div class="radios">
-                    <h2 class="fonteTitulo">Motivo do contato:</h2>
-                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
-                    <label for="assunto-box" class="texto-efeito">Quero me filiar ao partido</label><br>
-                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
-                    <label for="assunto-box" class="texto-efeito">Quero ser patrocinador</label><br>
-                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
-                    <label for="assunto-box" class="texto-efeito">Quero marcar um debate</label><br>
-                    <input type="radio" name="assunto" id="assunto-box" class="input-radio" required>
-                    <label for="assunto-box" class="texto-efeito">Quero fazer uma entrevista</label><br>
-                </div>
-                <div class="input-single">
-                    <h2 style="margin-bottom: 20px;" class="fonteTitulo">Outras informações: </h2>
-                    <textarea id="mensagem" name="mensagem" rows="4" placeholder=" " required></textarea>
-                </div>
-                <div class="input-single">
-                    <button type="submit" class="BtnEnviar">Enviar</button>
-                </div>
-            </form>
-        </section>
-
-        <div class="Anuncios">
-
-            <h2 class="fonteTitulo">E você pode gostar de:</h2>
-            <div class="ContainerAnuncio">
-                <img src="Imagens/BannerAnuncio.png" alt="">
-                <a href=""><span>Compre aqui!</span></a>
             </div>
-            <div class="ContainerAnuncio"><img src="Imagens/BolsaAnuncio.png" alt="">
-                <a href=""><span>Compre aqui!</span></a>
-            </div>
-            <div class="ContainerAnuncio"><img src="Imagens/CamisetaAnuncio.png" alt="">
-                <a href=""><span>Compre aqui!</span></a>
-            </div>
+
         </div>
 
 
